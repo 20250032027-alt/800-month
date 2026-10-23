@@ -4,8 +4,9 @@ Two clickable demos for Home by Kish, Cagayan de Oro. Nothing entered is saved.
 
 - `/` (`index.html`): Version 1, the showcase website (₱1,500 a year)
 - `/booking/` (`booking/index.html`): Version 2, the booking website (₱800 a month)
-- `img/`: photos used by both, watermarks already cropped
-- `vercel.json`: photo caching, and hidden from Google while these are demos
+- `img/`: full-size photos (WebP), `img/t/`: small versions for thumbnails
+- `vercel.json`: photo caching, basic security headers, hidden from Google while these are demos
+- `robots.txt`: tells search engines not to crawl the demos
 
 Each version opens with a "Two versions to choose from" box that links to the other.
 
@@ -20,9 +21,6 @@ Then open http://localhost:3000 and http://localhost:3000/booking/
 
 In each `index.html`, find `/* ===== Colour scheme: change these to re-theme the whole site ===== */`.
 
-## When a demo becomes the real site
+## Going live
 
-1. Remove `<meta name="robots" content="noindex, nofollow">` from the HTML.
-2. Remove the `X-Robots-Tag` block from `vercel.json`.
-3. Replace the [bracketed] placeholders (mobile number, email, GCash and bank details, building name).
-4. Remove the preview strip at the top and the versions box.
+See the `launch-kit` folder that came in the same zip.
