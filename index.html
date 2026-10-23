@@ -4,8 +4,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="robots" content="noindex, nofollow">
-<meta name="description" content="A cozy one-bedroom condo stay in Cagayan de Oro with a mountain-view balcony, pool and free parking. Hosted by Keziah Leigh.">
-<title>Home by Kish · Condo stays in Cagayan de Oro</title>
+<meta name="description" content="A cozy one-bedroom condo stay in Cagayan de Oro with a mountain-view balcony, pool and free parking. Rated 5.0 by guests. Message Kish to book.">
+<title>Home by Kish, Cagayan de Oro</title>
+<meta property="og:title" content="Home by Kish, a cozy condo stay in Cagayan de Oro">
+<meta property="og:description" content="One-bedroom with a mountain-view balcony, pool and free parking. Rated 5.0 by guests. Message Kish to book.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="/img/liv1.jpg">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"VacationRental","name":"Home by Kish","description":"A cozy one-bedroom condo in Cagayan de Oro with a mountain-view balcony, shared pool and free parking. Up to 3 guests.","address":{"@type":"PostalAddress","addressLocality":"Cagayan de Oro","addressRegion":"Misamis Oriental","addressCountry":"PH"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"5.0","reviewCount":"15"},"checkinTime":"14:00","checkoutTime":"11:00","containsPlace":{"@type":"Accommodation","occupancy":{"@type":"QuantitativeValue","maxValue":3},"numberOfBedrooms":1}}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&family=Figtree:wght@400;500;600;700&family=Caveat:wght@500&display=swap" rel="stylesheet">
@@ -537,6 +542,51 @@ h1,h2,h3,h4{margin:0}
   .btable td.dt .tiny{display:inline;margin-left:6px}
 }
 
+/* ===== showcase extras ===== */
+.ratebar{display:grid;grid-template-columns:repeat(4,1fr) auto;align-items:center;background:var(--surface);box-shadow:var(--shadow);border:1px solid var(--line);border-radius:var(--r-lg);padding:8px 8px 8px 12px;gap:4px}
+.ratebar .rb{padding:10px 16px;display:flex;flex-direction:column}
+.ratebar .rb+.rb{box-shadow:-1px 0 0 var(--line)}
+.ratebar .lab{font-size:.74rem;font-weight:700;color:var(--muted)}
+.ratebar b{font-family:var(--display);font-weight:400;font-size:1.4rem}
+.ratebar .btn{align-self:stretch;min-height:56px}
+@media (max-width:900px){.ratebar{grid-template-columns:1fr 1fr;padding:8px}.ratebar .rb+.rb{box-shadow:none}.ratebar .btn{grid-column:1/-1}}
+.plan{display:grid;grid-template-columns:1.1fr .9fr;gap:24px;align-items:start}
+.plan.inmodal{grid-template-columns:1fr}
+.plan>*{min-width:0}
+.pform{background:var(--surface);border:1px solid var(--line);border-radius:var(--r-lg);padding:24px}
+.pmsg{background:var(--navy);color:var(--navy-ink);border-radius:var(--r-lg);padding:24px;position:relative}
+.pmsg .lab{font-size:.74rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#D9BB84}
+#p-text{font-size:1.05rem;line-height:1.6;margin:10px 0 18px;background:rgba(255,255,255,.08);border-radius:16px 16px 16px 4px;padding:14px 16px}
+.pmsg .muted{color:var(--navy-muted)!important}
+.pbtns{display:flex;flex-wrap:wrap;gap:8px}
+.pmsg .btn.ghost{color:var(--navy-ink);border-color:rgba(244,241,234,.35)}
+.pmsg .btn.ghost:hover{background:rgba(244,241,234,.1)}
+.pmsg .btn:not(.ghost){background:#D9BB84;color:#1F2D4A}
+.est{margin-top:18px;padding:14px 16px;border-radius:var(--r);background:var(--gold-soft);display:grid;grid-template-columns:1fr auto;gap:2px 12px;align-items:center}
+.est b{font-family:var(--display);font-size:1.6rem;font-weight:400;color:var(--gold-ink);grid-row:1/3;grid-column:2}
+.est .tiny{grid-column:1}
+.howto{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:22px}
+.howto div{display:grid;grid-template-columns:34px 1fr;gap:2px 12px;padding:16px;border-radius:var(--r);background:var(--surface);border:1px solid var(--line)}
+.howto .n{grid-row:1/3;width:34px;height:34px;border-radius:50%;display:grid;place-items:center;background:var(--gold-soft);color:var(--gold-ink);font-weight:700}
+.howto span:not(.n){font-size:.9rem;color:var(--muted)}
+.paygrid{display:grid;gap:12px}
+.paycard{display:grid;grid-template-columns:auto 1fr;gap:4px 16px;align-items:start;padding:20px;border-radius:var(--r);background:var(--surface);border:1px solid var(--line)}
+.paycard .ico{grid-row:1/3;color:var(--gold-ink)}
+.paycard b{font-size:1.05rem}
+.paycard .kv{margin-top:6px;font-size:.92rem}
+.ratelist{margin:16px 0;border-top:1px solid var(--line)}
+.ratelist div{display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid var(--line);font-size:.94rem}
+.cgrid{display:grid;gap:8px}
+.cbtn{display:flex;align-items:center;gap:14px;padding:12px 14px;border:1px solid var(--line);border-radius:var(--r);text-decoration:none;color:var(--ink);transition:border-color .2s,background .2s}
+.cbtn:hover{border-color:var(--gold);background:var(--gold-soft)}
+.cbtn .ico{color:var(--gold-ink)}
+.cbtn b{display:block;font-size:.95rem}
+.cbtn small{display:block;color:var(--muted);font-size:.8rem}
+.cgrid.big .cbtn{padding:20px;background:var(--surface)}
+.cgrid.big .cbtn .ico{width:28px;height:28px}
+@media (max-width:900px){.plan{grid-template-columns:1fr}.howto{grid-template-columns:1fr}}
+@media (max-width:760px){.pform,.pmsg{padding:18px}#p-text{font-size:.98rem}}
+
 /* ===== versions box ===== */
 .pkgmodal{width:min(1040px,100%)}
 .pkgmodal .mh h2{font-size:1.5rem}
@@ -1023,15 +1073,15 @@ const STAR = '<svg class="star" viewBox="0 0 24 24" aria-hidden="true"><path d="
 const stars = (n = 5) => `<span class="stars" aria-label="${n} out of 5 stars">${STAR.repeat(Math.round(n))}</span>`;
 const ic = (n, c = "") => `<svg class="ico ${c}" viewBox="0 0 24 24" aria-hidden="true">${IC[n] || ""}</svg>`;
 
-const PKG_CURRENT = "booking";
-const OTHER_URL = "/showcase/";
+const PKG_CURRENT = "showcase";
+const OTHER_URL = "/booking/";
 /* ---------- packages box (shown when the site opens) ---------- */
 /* PKG_CURRENT and OTHER_URL are set by each build. */
 const PACKAGES = {
-  booking: { v: "Version 1", name: "Booking website", price: "₱800", per: "a month",
+  booking: { v: "Version 2", name: "Booking website", price: "₱800", per: "a month",
     blurb: "Guests see what's free and book online. You manage everything from your phone.",
     items: [
-      ["Everything in Version 2", null, "Photos, details, reviews, location and contact buttons"],
+      ["Everything in Version 1", null, "Photos, details, reviews, location and contact buttons"],
       ["Live availability calendar", "avail", "Shows free nights and the price for each night"],
       ["Online booking requests", "book", "Guests pick dates and see the total before they send"],
       ["GCash and bank receipt uploads", "book", "Or cash on arrival, guest's choice"],
@@ -1041,7 +1091,7 @@ const PACKAGES = {
       ["Find my booking", "track", "Guests check their status any time"],
       ["Monthly report, updates and support", "owner-report", "Bookings, earnings and fixes every month"]
     ] },
-  showcase: { v: "Version 2", name: "Showcase website", price: "₱1,500", per: "a year",
+  showcase: { v: "Version 1", name: "Showcase website", price: "₱1,500", per: "a year",
     blurb: "A hotel-style page for the unit. Guests message you to book.",
     items: [
       ["Hotel-style home page", "home", "Big photos, host intro, highlights"],
@@ -1066,7 +1116,7 @@ function pkgCard(key) {
   </section>`;
 }
 function pkgHTML() {
-  const order = PKG_CURRENT === "booking" ? ["booking", "showcase"] : ["showcase", "booking"];
+  const order = ["showcase", "booking"]; /* Version 1 always on the left */
   return `<div class="mh"><div><p class="kicker" style="margin:0 0 4px">Website preview for Home by Kish</p><h2>Two versions to choose from</h2></div><button class="x" data-act="close" aria-label="Close">${ic("x")}</button></div>
   <div class="mb"><div class="pkgs">${order.map(pkgCard).join("")}</div>
   <p class="pkg-foot">Tap any feature to jump to it. Domain and hosting are paid separately, in the owner's name. Everything you see uses sample prices and contact details until they're confirmed.</p></div>`;
@@ -1136,8 +1186,8 @@ const KNOW = [
   ["shield", "Safety", ["Smoke alarm installed", "No carbon monoxide alarm reported", "Guards and CCTV in the building (to confirm)"]]
 ];
 const FAQ = [
-  ["How do I book?", "Pick your dates on the calendar, add your details, then pay by GCash or bank transfer and upload the receipt. Prefer cash? Choose cash on arrival. Kish confirms by text or email, usually within the hour."],
-  ["Are my dates held while I pay?", "Yes. When you send a request, those nights are held for you for 24 hours so no one else can book them. If payment hasn't come in by then, the dates open up again."],
+  ["How do I book?", "Message Kish on Messenger, or call, text or email, with your dates and how many guests. She'll confirm if the dates are free and send the total. You can use the \"Plan your stay\" box on this site to write the message for you."],
+  ["How do I pay?", "GCash or bank transfer to reserve your dates, or cash on arrival if Kish agrees. Send a screenshot of your receipt in the same chat and she'll confirm your booking."],
   ["How does check-in work?", "It's self check-in. You'll get the lockbox code and directions before you arrive. If she's free, Kish likes to welcome guests herself."],
   ["Where do I park?", "Parking is free. Heads up from a past guest: the parking spot is a short walk (around 250 m) from the elevator, so drop off your bags at the elevator first, then park."],
   ["What's the honesty store?", "A little shelf of snacks and drinks inside the unit. Take what you like and pay what's listed, so you don't have to go out for food."],
@@ -1160,34 +1210,11 @@ const REVIEWS = [
   ["Princess Nadzmyra Xyza", "December 2024", "Host was very responsive to my queries. I didn't have any issues during the whole stay, everything's well provided even the parking space. Thank you so much Ms Keziah for having us! Highly recommended!", "Thank you, Ms. Princess"]
 ];
 const NEARBY = [["Malls and restaurants", "[ ] min drive"], ["City center", "[ ] min drive"], ["Divisoria night market", "[ ] min drive"], ["Nearest hospital", "[ ] min drive"], ["Laguindingan Airport", "About 45 to 60 min"]];
-const SPECIAL = {};
-let BOOKINGS = [], BLOCKS = [];
-const NAMES = ["Joanna Mae Sabellano", "Paolo Neri", "Kristine Yap", "Ramil Abao", "Bea Lumantas", "Arnel Gaviola", "Trisha Dumapias", "Kenneth Ebarle", "Mylene Roa", "Jerome Pabayo", "Alyssa Chiongbian", "Ronnie Emano", "Grace Lagbas", "Vince Tiongco", "Hazel Bacarrisas", "Raffy Uy"];
 const AV = ["#1F2D4A", "#8A6631", "#3F6B57", "#5A6785", "#A0603A", "#2F4F6F"];
 const initials = n => n.split(" ").filter(Boolean).map(x => x[0]).slice(0, 2).join("").toUpperCase();
 const avColor = n => AV[[...n].reduce((a, c) => a + c.charCodeAt(0), 0) % AV.length];
-let refSeq = 470;
-const mkRef = () => "HBK-" + String(new Date().getFullYear()).slice(2) + pad(new Date().getMonth() + 1) + "-" + String(++refSeq).padStart(4, "0");
 const unitById = id => UNITS.find(u => u.id === id);
-
-function seed() {
-  const r = rng(101);
-  const plan = [
-    ["home2", -12, 3, "completed", "gcash"], ["home2", -6, 4, "completed", "bank"], ["home2", -1, 3, "checkedin", "gcash"], ["home2", 4, 2, "pending", "gcash", true], ["home2", 9, 3, "confirmed", "bank"], ["home2", 16, 2, "confirmed", "cash"], ["home2", 22, 4, "pending", "bank", true], ["home2", 33, 6, "confirmed", "gcash"], ["home2", 41, 3, "pending", "cash"],
-    ["home2", 52, 4, "confirmed", "gcash"], ["home2", 58, 3, "cancelled", "gcash"]
-  ];
-  BOOKINGS = plan.map(([unit, off, n, status, method, receipt], i) => {
-    const inD = addDays(TODAY, off), out = addDays(inD, n), name = NAMES[i % NAMES.length];
-    const created = Date.now() - (status === "pending" ? (2 + r() * 14) * 36e5 : (3 + r() * 20) * 864e5);
-    return { ref: "HBK-" + inD.slice(2, 4) + inD.slice(5, 7) + "-" + String(300 + i * 7).padStart(4, "0"), unit, in: inD, out, guest: name,
-      phone: "0917 " + String(100 + Math.floor(r() * 899)) + " " + String(1000 + Math.floor(r() * 8999)),
-      email: name.split(" ")[0].toLowerCase() + "." + name.split(" ").slice(-1)[0].toLowerCase() + "@gmail.com",
-      guests: 1 + Math.floor(r() * 3), status, method, receipt: !!receipt || (status !== "pending" && method !== "cash"),
-      total: quote(unit, inD, out).total, created, holdUntil: created + 24 * 36e5, source: r() > .3 ? "Website" : "Messenger",
-      notes: r() > .6 ? "Arriving on the late flight, around 9 PM." : "" };
-  });
-  BLOCKS = [{ unit: "home2", in: addDays(TODAY, 26), out: addDays(TODAY, 28), reason: "Deep cleaning and aircon service" }];
-}
+const SHOWCASE = true;
 /* ---------- pricing ---------- */
 const isHoliday = s => { const m = s.slice(5); return ["12-24", "12-25", "12-31", "01-01"].includes(m); };
 function nightPrice(unitId, s) {
@@ -1206,39 +1233,10 @@ function quote(unitId, a, b) {
   const pct = n >= 28 ? 25 : n >= 7 ? 10 : 0, disc = Math.round(sum * pct / 100);
   return { nights: n, sum, kinds, pct, disc, cleaning: u.cleaning, deposit: u.deposit, total: sum - disc + u.cleaning };
 }
-function linesHTML(q, u) {
-  if (!q) return `<p class="small muted" style="margin:14px 0 0">Pick your check-in and check-out dates to see the full price.</p>`;
-  const k = q.kinds, row = (lab, n, amt) => n ? `<li class="sub"><span>${plural(n, "night")} ${lab}</span><span class="num">${peso(amt)}</span></li>` : "";
-  return `<ul class="lines">
-    <li><span>${plural(q.nights, "night")}</span><span class="num">${peso(q.sum)}</span></li>
-    ${row("weekday", k.weekday[0], k.weekday[1])}${row("Fri/Sat", k.weekend[0], k.weekend[1])}${row("holiday", k.holiday[0], k.holiday[1])}${row("special rate", k.special[0], k.special[1])}
-    ${q.pct ? `<li class="disc"><span>${q.pct >= 25 ? "Monthly" : "Weekly"} stay discount (${q.pct}%)</span><span class="num">−${peso(q.disc)}</span></li>` : ""}
-    <li><span>Cleaning fee</span><span class="num">${peso(q.cleaning)}</span></li>
-    <li class="total"><span>Total to pay</span><span class="num">${peso(q.total)}</span></li>
-  </ul>
-  <div class="hint">${ic("shield", "sm")}<span>Plus a ${peso(q.deposit)} refundable security deposit, paid in cash at check-in and returned at check-out.</span></div>`;
-}
-
-/* ---------- availability ---------- */
-function nightState(unitId, s) {
-  for (const b of BOOKINGS) if (b.unit === unitId && b.status !== "cancelled" && s >= b.in && s < b.out) return b.status === "pending" ? "held" : "booked";
-  for (const k of BLOCKS) if (k.unit === unitId && s >= k.in && s < k.out) return "blocked";
-  return "free";
-}
-function rangeOK(unitId, a, b) { for (let i = 0; i < diff(a, b); i++) if (nightState(unitId, addDays(a, i)) !== "free") return addDays(a, i); return null; }
-function bookingAt(unitId, s) { return BOOKINGS.find(b => b.unit === unitId && b.status !== "cancelled" && s >= b.in && s < b.out); }
-function blockAt(unitId, s) { return BLOCKS.find(k => k.unit === unitId && s >= k.in && s < k.out); }
-
 /* ---------- app state ---------- */
-const S = {
-  mode: "guest", authed: false, pin: "",
-  stay: { unit: "home2", in: null, out: null, guests: 2 },
-  calMonth: null, step: 1,
-  guest: { first: "", last: "", phone: "", email: "", arrive: "2:00 PM to 4:00 PM", notes: "" },
-  pay: null, file: null, lastRef: null, datesOpen: false,
-  tour: "living", tourI: 0, slide: 0, revAll: false,
-  bFilter: "all", bSearch: "", aUnit: "home2", aMonth: null, aSel: null
-};
+const SPECIAL = {};
+const S = { tour: "living", tourI: 0, slide: 0, revAll: false, revAllU: false,
+  plan: { in: "", out: "", guests: 2, name: "", note: "" } };
 /* ---------- overlays ---------- */
 let lastFocus = null;
 function openModal(html, o = {}) {
@@ -1252,7 +1250,6 @@ function openModal(html, o = {}) {
 function closeModal() {
   const sc = $("#scrim"); sc.classList.remove("open"); sc.setAttribute("aria-hidden", "true");
   document.body.style.overflow = ""; setTimeout(() => { if (!sc.classList.contains("open")) sc.innerHTML = ""; }, 300);
-  if (S.datesOpen) { S.datesOpen = false; if (S.stay.in && !S.stay.out) S.stay.in = null; rerender(); return; }
   lastFocus && lastFocus.focus && lastFocus.focus();
 }
 function setModal(html) { const m = $("#scrim .modal"); if (m) { const st = m.scrollTop; m.innerHTML = html; m.scrollTop = st; } }
@@ -1265,110 +1262,100 @@ function toast(title, msg = "", icon = "check") {
 }
 const demoNote = what => toast(what, "Demo only. On the real site this would happen for real.", "info");
 
-/* ---------- calendar ---------- */
-function monthStart(s) { return s.slice(0, 7) + "-01"; }
-function addMonths(m, n) { const d = parse(m); d.setMonth(d.getMonth() + n); return iso(d); }
-function monthGrid(unitId, m, sel, opts = {}) {
-  const d0 = parse(m), y = d0.getFullYear(), mo = d0.getMonth(), first = new Date(y, mo, 1).getDay(), days = new Date(y, mo + 1, 0).getDate();
-  let cells = "";
-  for (let i = 0; i < first; i++) cells += `<span></span>`;
-  for (let d = 1; d <= days; d++) {
-    const s = iso(new Date(y, mo, d)), past = s < TODAY, st = past ? "free" : nightState(unitId, s), np = nightPrice(unitId, s);
-    const cls = ["day"]; if (past) cls.push("past"); if (st !== "free") cls.push(st); if (s === TODAY) cls.push("today"); if (np.kind === "holiday" || np.kind === "special") cls.push("hol");
-    if (sel.in && s === sel.in) cls.push("start"); if (sel.out && s === sel.out) cls.push("end");
-    if (sel.in && sel.out && s > sel.in && s < sel.out) cls.push("inrange");
-    const lab = `${DOW[parse(s).getDay()]} ${MONTHS[mo]} ${d}, ${st === "free" ? "available, " + peso(np.p) : st === "held" ? "on hold for another guest" : st === "blocked" ? "not available" : "booked"}`;
-    cells += `<button type="button" class="${cls.join(" ")}" data-act="pickDay" data-day="${s}" data-ctx="${opts.ctx || ""}" ${past ? "disabled" : ""} aria-label="${lab}" ${sel.in === s || sel.out === s ? 'aria-pressed="true"' : ""}>${d}<small>${opts.prices === false ? "" : (np.p / 1000).toFixed(1) + "k"}</small></button>`;
-  }
-  return `<div class="month"><h5>${MONTHS[mo]} ${y}</h5><div class="dow">${DOW.map(x => `<span>${x[0]}${x[1]}</span>`).join("")}</div><div class="days">${cells}</div></div>`;
-}
-function calendarHTML(unitId, sel, ctx, msg) {
-  const m = S.calMonth || monthStart(sel.in || TODAY), canBack = m > monthStart(TODAY);
-  return `<div class="calhead"><h4>${sel.in && !sel.out ? "Now pick your check-out date" : "Pick your check-in date"}</h4>
-    <div class="calnav"><button type="button" data-act="calNav" data-n="-1" data-ctx="${ctx}" aria-label="Previous month" ${canBack ? "" : "disabled"}>${ic("left")}</button><button type="button" data-act="calNav" data-n="1" data-ctx="${ctx}" aria-label="Next month">${ic("right")}</button></div></div>
-    <div class="cal ${S.calAnim ? "fadeswap" : ""}">${monthGrid(unitId, m, sel, { ctx })}${monthGrid(unitId, addMonths(m, 1), sel, { ctx })}</div>
-    <div class="legend"><span><i class="s"></i>Your dates</span><span><i class="b"></i>Booked</span><span><i class="h"></i>On hold</span><span><i class="x"></i>Not available</span><span style="color:var(--warn);font-weight:600">Orange price: holiday rate</span></div>
-    <div aria-live="polite">${msg ? `<div class="calmsg ${msg.t}">${ic(msg.t === "err" ? "alert" : "check", "sm")}<span>${msg.m}</span></div>` : ""}</div>`;
-}
-let calMsg = null;
-function pickDay(day) {
-  const st = S.stay, u = st.unit;
-  calMsg = null;
-  if (!st.in || st.out) {
-    if (nightState(u, day) !== "free") { calMsg = { t: "err", m: `${fmtD(day, { dow: true })} is already taken in ${unitById(u).name}. Try another night, or check the other unit.` }; return; }
-    st.in = day; st.out = null; return;
-  }
-  if (day <= st.in) { if (nightState(u, day) === "free") { st.in = day; } return; }
-  const clash = rangeOK(u, st.in, day);
-  if (clash) { calMsg = { t: "err", m: `Those dates overlap a stay that is already booked or on hold (${fmtD(clash, { dow: true })}). Choose a check-out on or before ${fmtD(clash)}.` }; return; }
-  st.out = day; const q = quote(u, st.in, st.out);
-  calMsg = { t: "ok", m: `${plural(q.nights, "night")}, ${fmtRange(st.in, st.out)}. Total ${peso(q.total)}${q.pct ? `, including your ${q.pct}% long-stay discount` : ""}.` };
-}
-function datesModal() {
-  const u = unitById(S.stay.unit);
-  return `<div class="mh"><h2>${esc(u.name)}: choose dates</h2><button class="x" data-act="close" aria-label="Close">${ic("x")}</button></div>
-  <div class="mb">
-    ${UNITS.length < 2 ? "" : `<div class="chips" style="margin-bottom:22px" role="group" aria-label="Unit">${UNITS.map(x => `<button type="button" class="chip" data-act="modalUnit" data-u="${x.id}" aria-pressed="${x.id === u.id}">${esc(x.name)} <span class="c">from ${peso(x.rate)}</span></button>`).join("")}</div>`}
-    ${calendarHTML(u.id, S.stay, "modal", calMsg)}
-  </div>
-  <div class="mf"><button class="btn ghost sm" data-act="clearDates">Clear dates</button><button class="btn sm" data-act="close" ${S.stay.in && S.stay.out ? "" : "disabled"}>Use these dates</button></div>`;
-}
 /* ---------- shell ---------- */
 const BRAND = (href = "#home", sub = "Cagayan de Oro") => `<a class="brand" href="${href}"><b>Home by Kish</b><span>${sub}</span></a>`;
+const CONTACT = { messenger: "[Messenger link]", phone: "[Mobile number]", email: "[Email address]" };
 function ribbon() {
-  return `<div class="ribbon"><div class="wrap"><span><span class="dot" aria-hidden="true"></span>Version 1 preview: the booking website. Click anything, nothing is saved or sent.</span>
-  <span class="rgt"><button class="pbtn" data-act="pkg">${ic("list", "sm")}Versions and prices</button><span class="seg" role="group" aria-label="Switch view"><button data-act="mode" data-m="guest" aria-pressed="${S.mode === "guest"}">Guest view</button><button data-act="mode" data-m="owner" aria-pressed="${S.mode === "owner"}">Owner view</button></span></span></div></div>`;
+  return `<div class="ribbon"><div class="wrap"><span><span class="dot" aria-hidden="true"></span>Version 1 preview: the showcase website. Contact buttons aren't connected yet.</span><span class="rgt"><button class="pbtn" data-act="pkg">${ic("list", "sm")}Versions and prices</button></span></div></div>`;
 }
-const NAVL = [["unit-home2", "The unit"], ["home2-tour", "Take a tour"], ["reviews", "Reviews"], ["goodtoknow", "Good to know"], ["track", "My booking"], ["contact", "Contact"]];
+const NAVL = [["unit-home2", "The unit"], ["home2-tour", "Take a tour"], ["reviews", "Reviews"], ["goodtoknow", "Good to know"], ["contact", "Contact"]];
 function header(cur) {
   return `<header class="hdr" id="hdr"><div class="wrap">${BRAND()}
     <nav class="nav" aria-label="Main">${NAVL.map(([h, t]) => `<a href="#${h}" ${cur === h ? 'aria-current="page"' : ""}>${t}</a>`).join("")}</nav>
-    <a class="btn book" href="#book">Book now</a>
+    <button class="btn book" data-act="plan">${ic("chat", "sm")}Message to book</button>
     <button class="burger" data-act="menu" aria-label="Open menu" aria-expanded="false">${ic("list")}</button></div></header>
   <div class="mnav" id="mnav" role="dialog" aria-modal="true" aria-label="Menu">
     <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:18px">${BRAND()}<button class="x" data-act="menu" aria-label="Close menu">${ic("x")}</button></div>
     ${NAVL.map(([h, t]) => `<a class="item" href="#${h}">${t}</a>`).join("")}
-    <a class="btn block" href="#book" style="margin-top:auto">Book now</a></div>`;
+    <button class="btn block" data-act="plan" style="margin-top:auto">${ic("chat")}Message to book</button></div>`;
 }
+const contactLinks = (cls = "") => `
+  <a class="cbtn ${cls}" href="#contact" data-act="demo" data-w="Opening Messenger">${ic("chat")}<span><b>Messenger</b><small>Fastest reply</small></span></a>
+  <a class="cbtn ${cls}" href="#contact" data-act="demo" data-w="Calling Kish">${ic("phone")}<span><b>Call or text</b><small>${CONTACT.phone}</small></span></a>
+  <a class="cbtn ${cls}" href="#contact" data-act="demo" data-w="Opening your email app">${ic("mail")}<span><b>Email</b><small>${CONTACT.email}</small></span></a>`;
 function footer() {
   const dark = document.documentElement.dataset.theme === "dark";
   return `<footer class="ftr"><div class="wrap cols">
     <div>${BRAND()}<p class="small" style="margin:16px 0 0;opacity:.9;max-width:34ch">Condo stays in Cagayan de Oro, hosted by ${HOST.name}.</p>
       <div class="soc"><a href="#contact" aria-label="Facebook">${ic("fb")}</a><a href="#contact" aria-label="Instagram">${ic("ig")}</a><a href="#contact" aria-label="TikTok">${ic("tt")}</a></div></div>
-    <div><h3>Explore</h3><ul><li><a href="#unit-home2">${esc(UNITS[0].name)}</a></li><li><a href="#home2-tour">Photo tour</a></li><li><a href="#reviews">Guest reviews</a></li><li><a href="#goodtoknow">House rules</a></li><li><a href="#track">Find my booking</a></li></ul></div>
-    <div><h3>Talk to Kish</h3><ul><li><a class="ci" href="#contact">${ic("chat", "sm")} Messenger</a></li><li><a class="ci" href="#contact">${ic("phone", "sm")} [Mobile number]</a></li><li><a class="ci" href="#contact">${ic("mail", "sm")} [Email address]</a></li><li class="ci">${ic("clock", "sm")} ${HOST.response}</li></ul></div>
-    <div><h3>Where</h3><p class="small" style="margin:0;opacity:.95">[Building name], Cagayan de Oro City, Misamis Oriental</p><p class="tiny" style="margin:10px 0 0;opacity:.8">The exact address is shared after you book.</p></div>
+    <div><h3>Explore</h3><ul><li><a href="#unit-home2">${esc(UNITS[0].name)}</a></li><li><a href="#home2-tour">Photo tour</a></li><li><a href="#reviews">Guest reviews</a></li><li><a href="#goodtoknow">House rules</a></li><li><a href="#plan">Plan your stay</a></li></ul></div>
+    <div><h3>Talk to Kish</h3><ul><li><a class="ci" href="#contact">${ic("chat", "sm")} Messenger</a></li><li><a class="ci" href="#contact">${ic("phone", "sm")} ${CONTACT.phone}</a></li><li><a class="ci" href="#contact">${ic("mail", "sm")} ${CONTACT.email}</a></li><li class="ci">${ic("clock", "sm")} ${HOST.response}</li></ul></div>
+    <div><h3>Where</h3><p class="small" style="margin:0;opacity:.95">[Building name], Cagayan de Oro City, Misamis Oriental</p><p class="tiny" style="margin:10px 0 0;opacity:.8">The exact address is shared once your stay is confirmed.</p></div>
   </div><div class="base"><div class="wrap"><span>© ${new Date().getFullYear()} Home by Kish</span><button class="themebtn" data-act="theme">${ic(dark ? "sun" : "moon", "sm")}${dark ? "Light mode" : "Dark mode"}</button></div></div></footer>
   <div class="fab"><div class="chatpop" id="chatpop" role="dialog" aria-label="Message Kish"><div style="display:flex;gap:12px;align-items:center;margin-bottom:10px">${KISH}<div><b>Kish</b><div class="tiny muted"><span class="live"></span>${HOST.response}</div></div></div>
     <a href="#contact" data-act="demo" data-w="Opening Messenger">${ic("chat")}<span><b>Messenger</b><br><span class="tiny muted">Fastest reply</span></span></a>
-    <a href="#contact" data-act="demo" data-w="Calling Kish">${ic("phone")}<span><b>Call or text</b><br><span class="tiny muted">[Mobile number]</span></span></a>
-    <a href="#contact" data-act="demo" data-w="Opening your email app">${ic("mail")}<span><b>Email</b><br><span class="tiny muted">[Email address]</span></span></a></div>
+    <a href="#contact" data-act="demo" data-w="Calling Kish">${ic("phone")}<span><b>Call or text</b><br><span class="tiny muted">${CONTACT.phone}</span></span></a>
+    <a href="#contact" data-act="demo" data-w="Opening your email app">${ic("mail")}<span><b>Email</b><br><span class="tiny muted">${CONTACT.email}</span></span></a></div>
     <button class="top" id="totop" data-act="top" aria-label="Back to top">${ic("up")}</button>
     <button class="chat" data-act="chat" aria-expanded="false">${ic("chat")}Message Kish</button></div>`;
+}
+
+/* ---------- plan your stay (writes the message for the guest) ---------- */
+function planEstimate() {
+  const p = S.plan, u = UNITS[0];
+  if (!p.in || !p.out || p.out <= p.in) return null;
+  return quote(u.id, p.in, p.out);
+}
+function planMessage() {
+  const p = S.plan, u = UNITS[0], q = planEstimate();
+  const dates = q ? `${fmtD(p.in, { dow: true, year: true })} to ${fmtD(p.out, { dow: true, year: true })} (${plural(q.nights, "night")})` : "[your dates]";
+  return `Hi Kish! I'd like to book ${u.name} from ${dates} for ${plural(p.guests, "guest")}.${p.note ? " " + p.note : ""} Is it available?${p.name ? " Thank you! - " + p.name : " Thank you!"}`;
+}
+function planHTML(inModal) {
+  const p = S.plan, u = UNITS[0], q = planEstimate(), today = TODAY;
+  return `<div class="plan ${inModal ? "inmodal" : ""}">
+    <div class="pform">
+      <div class="fgrid">
+        <div class="field"><label for="p-in">Check-in</label><input id="p-in" type="date" min="${today}" value="${p.in}" data-plan="in"></div>
+        <div class="field"><label for="p-out">Check-out</label><input id="p-out" type="date" min="${p.in || today}" value="${p.out}" data-plan="out"></div>
+        <div class="field"><span style="font-weight:600;font-size:.92rem">Guests</span><span class="stepper" style="min-height:50px"><button type="button" data-act="pguests" data-n="-1" aria-label="Fewer guests" ${p.guests <= 1 ? "disabled" : ""}>−</button><output>${p.guests}</output><button type="button" data-act="pguests" data-n="1" aria-label="More guests" ${p.guests >= u.guests ? "disabled" : ""}>+</button><span class="tiny muted" style="margin-left:8px">up to ${u.guests}</span></span></div>
+        <div class="field"><label for="p-name">Your name <span class="muted" style="font-weight:400">(optional)</span></label><input id="p-name" value="${esc(p.name)}" data-plan="name" autocomplete="given-name"></div>
+        <div class="field full"><label for="p-note">Anything to add? <span class="muted" style="font-weight:400">(optional)</span></label><input id="p-note" value="${esc(p.note)}" data-plan="note" placeholder="Arriving late, need parking, celebrating a birthday..."></div>
+      </div>
+      <div id="p-est">${estHTML(q)}</div>
+    </div>
+    <div class="pmsg"><span class="lab">Your message to Kish</span><p id="p-text">${esc(planMessage())}</p>
+      <div class="pbtns"><button class="btn sm" data-act="sendPlan" data-via="Messenger">${ic("chat", "sm")}Send on Messenger</button><button class="btn ghost sm" data-act="sendPlan" data-via="text">${ic("phone", "sm")}Text</button><button class="btn ghost sm" data-act="sendPlan" data-via="email">${ic("mail", "sm")}Email</button><button class="btn ghost sm" data-act="copyPlan">${ic("list", "sm")}Copy</button></div>
+      <p class="tiny muted" style="margin:12px 0 0">Kish replies with availability and the exact total. Nothing is booked until she confirms.</p></div>
+  </div>`;
+}
+function estHTML(q) {
+  if (!q) return `<p class="small muted" style="margin:14px 0 0">Add your dates to see an estimated total.</p>`;
+  return `<div class="est"><span>Estimated total</span><b>${peso(q.total)}</b><span class="tiny muted">${plural(q.nights, "night")} plus ${peso(q.cleaning)} cleaning fee${q.pct ? `, with ${q.pct}% off for a long stay` : ""}. Kish confirms the final price.</span></div>`;
 }
 
 /* ---------- HOME ---------- */
 const HERO = ["liv1", "bed1", "pool2", "bal1"];
 function home() {
-  const st = S.stay, u = unitById(st.unit);
+  const u = UNITS[0];
   return `
   <section class="hero" aria-label="Welcome"><div class="slides" aria-hidden="true">${HERO.map((p, i) => `<div class="slide p-${p} ${i === S.slide ? "on" : ""}"></div>`).join("")}</div>
     <div class="wrap"><div class="copy hero-in">
       <p class="kicker">Condo stays in Cagayan de Oro</p>
       <h1 class="display d1">Feel at home in Cagayan de Oro</h1>
       <p class="lede">A cozy one-bedroom with a mountain-view balcony, a pool downstairs and free parking. Kept hotel-clean by Kish, who has been hosting for ${HOST.years} years.</p>
-      <div class="ctas"><button class="btn light" data-act="openDates">${ic("cal")}Check availability</button><a class="btn glass" href="#home2-tour">Take a look inside</a></div>
+      <div class="ctas"><button class="btn light" data-act="plan">${ic("chat")}Message to book</button><a class="btn glass" href="#home2-tour">Take a look inside</a></div>
       <div class="chips-row"><a class="rating-chip" href="#reviews" style="color:inherit;text-decoration:none">${stars()}<span><b>5.0</b> from 15 guest reviews</span></a><span class="rating-chip">${ic("clock", "sm")}<span><b id="cdotime">${cdoTime()}</b> in Cagayan de Oro</span></span></div>
     </div></div>
     <div class="sdots" role="group" aria-label="Choose photo">${HERO.map((_, i) => `<button data-act="slide" data-i="${i}" aria-label="Photo ${i + 1}" aria-current="${i === S.slide}"></button>`).join("")}</div></section>
 
-  <div class="wrap bbar"><form onsubmit="return false" aria-label="Quick availability check">
-    ${UNITS.length > 1 ? `<div class="f"><label class="lab" for="qb-unit">Home</label><select id="qb-unit" data-change="stayUnit">${UNITS.map(x => `<option value="${x.id}" ${x.id === st.unit ? "selected" : ""}>${esc(x.name)}, up to ${x.guests} guests</option>`).join("")}</select></div>` : `<div class="f" style="cursor:default"><span class="lab">Your stay</span><span class="val">${esc(u.name)}, up to ${u.guests} guests</span></div>`}
-    <button type="button" class="f" data-act="openDates"><span class="lab">Check-in</span><span class="val">${st.in ? fmtD(st.in, { dow: true }) : "Add date"}</span></button>
-    <button type="button" class="f" data-act="openDates"><span class="lab">Check-out</span><span class="val">${st.out ? fmtD(st.out, { dow: true }) : "Add date"}</span></button>
-    <div class="f"><span class="lab">Guests</span><span class="stepper"><button type="button" data-act="guests" data-n="-1" aria-label="Fewer guests" ${st.guests <= 1 ? "disabled" : ""}>−</button><output aria-live="polite">${st.guests}</output><button type="button" data-act="guests" data-n="1" aria-label="More guests" ${st.guests >= u.guests ? "disabled" : ""}>+</button></span></div>
-    <button type="button" class="btn" data-act="${st.in && st.out ? "goBook" : "openDates"}">${st.in && st.out ? "Book these dates" : "Check availability"}</button>
-  </form></div>
+  <div class="wrap bbar"><div class="ratebar">
+    <div class="rb"><span class="lab">Sun to Thu</span><b>${peso(u.rate)}</b></div>
+    <div class="rb"><span class="lab">Fri and Sat</span><b>${peso(u.weekend)}</b></div>
+    <div class="rb"><span class="lab">Holidays</span><b>${peso(u.holiday)}</b></div>
+    <div class="rb"><span class="lab">Up to</span><b>${u.guests} guests</b></div>
+    <button class="btn" data-act="plan">${ic("chat", "sm")}Message to book</button>
+  </div></div>
 
   <div class="wrap"><div class="perks">
     <div class="rv">${ic("key")}<span><b>Self check-in</b><span>Let yourself in with a lockbox, any time after 2 PM</span></span></div>
@@ -1387,7 +1374,17 @@ function home() {
       <div style="display:flex;align-items:center;gap:16px;margin-top:26px">${KISH}<div><p class="script" style="margin:0">Kish</p><p class="small muted" style="margin:2px 0 0">${HOST.name}, your host</p></div></div>
     </div></div></section>
 
-  <section class="sec sand" id="homes">${UNITS.length > 1 ? `<div class="wrap"><div class="shead rv"><div><p class="kicker">Where you'll stay</p><h2 class="display d2">Choose your home</h2></div></div><div class="units-grid">${UNITS.map((x, i) => unitCard(x, i)).join("")}</div></div>` : featureHTML(UNITS[0])}</section>
+  <section class="sec sand" id="homes"><div class="wrap feature"><div class="fcollage">
+      <button class="fc fc1 rv" data-act="lightbox" data-i="${ALLPHOTOS.indexOf("liv1")}" aria-label="Open photo: ${esc(PHOTO_ALT.liv1)}">${photo("liv1", { cls: "wipe" })}</button>
+      <button class="fc fc2 rv dl1" data-act="lightbox" data-i="${ALLPHOTOS.indexOf("bed1")}" aria-label="Open photo: ${esc(PHOTO_ALT.bed1)}">${photo("bed1", { cls: "wipe" })}</button>
+      <button class="fc fc3 rv dl2" data-act="lightbox" data-i="${ALLPHOTOS.indexOf("bal1")}" aria-label="Open photo: ${esc(PHOTO_ALT.bal1)}">${photo("bal1", { cls: "wipe" })}</button>
+    </div>
+    <div class="rv dl1"><p class="kicker">Where you'll stay</p><h2 class="display d2">${esc(u.name)}, your place in CDO</h2>
+      <p class="lede" style="margin-top:18px">${esc(u.blurb)}</p>
+      <div class="ffacts"><div><b>${u.guests}</b><span>guests</span></div><div><b>${u.bedrooms}</b><span>bedroom</span></div><div><b>${u.beds}</b><span>beds</span></div><div><b>${u.baths}</b><span>bath</span></div></div>
+      <p style="margin:0 0 22px"><span class="display" style="font-size:2rem;color:var(--gold-ink)">${peso(u.rate)}</span> <span class="muted">a night, Sunday to Thursday</span></p>
+      <div style="display:flex;gap:12px;flex-wrap:wrap"><button class="btn" data-act="plan">${ic("chat")}Message to book</button><a class="btn ghost" href="#unit-${u.id}">See full details</a></div>
+    </div></div></section>
   <div class="marquee" aria-label="What guests say, in their words"><div class="mtrack">${[0, 1].map(k => `<div class="mgroup" ${k ? 'aria-hidden="true"' : ""}>${QUOTES.map(q => `<span>${STAR}${q}</span>`).join("")}</div>`).join("")}</div></div>
 
   <section class="sec" id="home2-tour">${tourHTML()}</section>
@@ -1405,32 +1402,39 @@ function home() {
 
   <section class="sec" id="reviews">${reviewsHTML(false)}</section>
 
-  <section class="sec sand"><div class="wrap">
-    <div class="rv"><p class="kicker">How booking works</p><h2 class="display d2">Book in a few minutes, pay your way</h2></div>
-    <ol class="steps">
-      <li class="rv"><span class="n">1</span><h3>Pick your dates</h3><p>The calendar shows which nights are free, and the full price updates as you choose.</p></li>
-      <li class="rv dl1"><span class="n">2</span><h3>Send your request</h3><p>Add your name and number. Your nights are held for 24 hours so nobody else can take them.</p></li>
-      <li class="rv dl2"><span class="n">3</span><h3>Pay your way</h3><p>GCash or bank transfer: upload a screenshot of your receipt. Or choose cash on arrival.</p></li>
-      <li class="rv dl3"><span class="n">4</span><h3>Get your welcome</h3><p>Kish confirms by text and email, then sends the lockbox code and directions before you arrive.</p></li>
-    </ol>
-    <div class="pays rv"><span class="muted small" style="margin-right:6px">Ways to pay:</span><span class="pill">${ic("wallet")}GCash</span><span class="pill">${ic("bank")}Bank transfer</span><span class="pill">${ic("cash")}Cash on arrival</span></div>
+  <section class="sec sand" id="plan"><div class="wrap">
+    <div class="rv" style="margin-bottom:28px"><p class="kicker">Plan your stay</p><h2 class="display d2">Pick your dates, and we'll write the message for you</h2><p class="lede" style="margin-top:14px">Booking is done directly with Kish, no app or account needed. Fill this in, then send it on Messenger, by text or by email.</p></div>
+    <div class="rv">${planHTML(false)}</div>
+    <div class="howto rv">
+      <div><span class="n">1</span><b>Send your dates</b><span>Kish replies with availability and the total, usually within the hour.</span></div>
+      <div><span class="n">2</span><b>Reserve your stay</b><span>Pay by GCash or bank transfer and send the receipt in the same chat. Cash on arrival is possible if Kish agrees.</span></div>
+      <div><span class="n">3</span><b>Get your welcome</b><span>Kish sends the lockbox code and directions before you arrive.</span></div>
+    </div>
   </div></section>
 
-  <section class="sec" id="location"><div class="wrap loc">
+  <section class="sec" id="payment"><div class="wrap split" style="align-items:start">
+    <div class="rv"><p class="kicker">Payment</p><h2 class="display d2">Ways to pay</h2><p class="lede" style="margin-top:16px">Only pay after Kish confirms your dates in the chat. Always send your receipt so she can match the payment to your booking.</p></div>
+    <div class="paygrid rv dl1">
+      <div class="paycard">${ic("wallet", "lg")}<b>GCash</b><dl class="kv"><dt>Number</dt><dd>[GCash number]</dd><dt>Name</dt><dd>Keziah L.</dd></dl></div>
+      <div class="paycard">${ic("bank", "lg")}<b>Bank transfer</b><dl class="kv"><dt>Bank</dt><dd>[Bank name]</dd><dt>Name</dt><dd>Keziah Leigh [Surname]</dd><dt>Account</dt><dd>[Account number]</dd></dl></div>
+      <div class="paycard">${ic("cash", "lg")}<b>Cash on arrival</b><p class="small muted" style="margin:6px 0 0">If Kish agrees ahead of time. Please bring the exact amount if you can.</p></div>
+    </div></div></section>
+
+  <section class="sec sand" id="location"><div class="wrap loc">
     <div class="rv">${photo(null, { hint: "Map of the area (Google Maps on the live site)" })}</div>
     <div class="rv dl1"><p class="kicker">Location</p><h2 class="display d2">Quiet, green, and close to town</h2>
       <p class="lede" style="margin-top:20px">Guests describe it as peaceful and private, with malls close by. The building sits among the hills, with gardens, a pool and a playground downstairs.</p>
       <ul class="near">${NEARBY.map(([a, b]) => `<li><span>${a}</span><span>${b}</span></li>`).join("")}</ul>
-      <p class="tiny muted" style="margin-top:12px">Travel times will be filled in once the address is confirmed. The exact address is shared after booking.</p>
+      <p class="tiny muted" style="margin-top:12px">Travel times will be filled in once the address is confirmed.</p>
     </div></div></section>
 
-  <section class="sec sand"><div class="wrap">
+  <section class="sec"><div class="wrap">
     <div class="shead rv"><div><p class="kicker">Gallery</p><h2 class="display d2">More photos</h2></div>
     <div class="arrows"><button data-act="strip" data-n="-1" aria-label="Scroll photos left">${ic("left")}</button><button data-act="strip" data-n="1" aria-label="Scroll photos right">${ic("right")}</button></div></div>
-    <div class="strip rv" id="strip">${ALLPHOTOS.map((p, i) => `<button data-act="lightbox" data-set="all" data-i="${i}" aria-label="Open photo: ${esc(PHOTO_ALT[p])}">${photo(p)}</button>`).join("")}</div>
+    <div class="strip rv" id="strip">${ALLPHOTOS.map((p, i) => `<button data-act="lightbox" data-i="${i}" aria-label="Open photo: ${esc(PHOTO_ALT[p])}">${photo(p)}</button>`).join("")}</div>
   </div></section>
 
-  <section class="sec" id="goodtoknow"><div class="wrap">
+  <section class="sec sand" id="goodtoknow"><div class="wrap">
     <div class="rv" style="margin-bottom:34px"><p class="kicker">Good to know</p><h2 class="display d2">Before you arrive</h2></div>
     <div class="know">${KNOW.map(([i, t, l], k) => `<div class="rv ${k ? "dl" + k : ""}"><h3>${ic(i)}${t}</h3><ul>${l.map(x => `<li>${x}</li>`).join("")}</ul></div>`).join("")}</div>
     <div class="split" style="align-items:start;margin-top:64px">
@@ -1439,30 +1443,11 @@ function home() {
     </div>
   </div></section>
 
-  <section class="wrap"><div class="cta rv"><div><h2 class="display d3">${new Date().getMonth() >= 8 ? "Holiday dates go fast" : "Weekends book up first"}</h2><p class="muted" style="margin:8px 0 0">${new Date().getMonth() >= 8 ? "Christmas and New Year nights use holiday rates. Pick your dates early." : "Pick your dates early to get the nights you want."}</p></div><button class="btn" data-act="openDates">${ic("cal")}Check availability</button></div></section>`;
+  <section class="wrap" style="margin-top:56px"><div class="cta rv"><div><h2 class="display d3">${new Date().getMonth() >= 8 ? "Holiday dates go fast" : "Weekends book up first"}</h2><p class="muted" style="margin:8px 0 0">Message Kish early to get the nights you want.</p></div><button class="btn" data-act="plan">${ic("chat")}Message to book</button></div></section>`;
 }
 const ALLPHOTOS = TOUR.flatMap(t => t.photos);
 const QUOTES = ["Feels so homey", "The BEST!", "Very very comfy bed", "Great water pressure", "10/10 would book again", "So peaceful and private", "Exceeds our expectations", "Clean and cozy", "Super sulit", "One of the best hosts you can ask for", "Looks exactly like the photos"];
 function cdoTime() { try { return new Date().toLocaleTimeString("en-PH", { hour: "numeric", minute: "2-digit", timeZone: "Asia/Manila" }); } catch (e) { return ""; } }
-function featureHTML(u) {
-  return `<div class="wrap feature"><div class="fcollage">
-      <button class="fc fc1 rv" data-act="lightbox" data-set="all" data-i="${ALLPHOTOS.indexOf("liv1")}" aria-label="Open photo: ${esc(PHOTO_ALT.liv1)}">${photo("liv1", { cls: "wipe" })}</button>
-      <button class="fc fc2 rv dl1" data-act="lightbox" data-set="all" data-i="${ALLPHOTOS.indexOf("bed1")}" aria-label="Open photo: ${esc(PHOTO_ALT.bed1)}">${photo("bed1", { cls: "wipe" })}</button>
-      <button class="fc fc3 rv dl2" data-act="lightbox" data-set="all" data-i="${ALLPHOTOS.indexOf("bal1")}" aria-label="Open photo: ${esc(PHOTO_ALT.bal1)}">${photo("bal1", { cls: "wipe" })}</button>
-    </div>
-    <div class="rv dl1"><p class="kicker">Where you'll stay</p><h2 class="display d2">${esc(u.name)}, your place in CDO</h2>
-      <p class="lede" style="margin-top:18px">${esc(u.blurb)}</p>
-      <div class="ffacts"><div><b>${u.guests}</b><span>guests</span></div><div><b>${u.bedrooms}</b><span>bedroom</span></div><div><b>${u.beds}</b><span>beds</span></div><div><b>${u.baths}</b><span>bath</span></div></div>
-      <p style="margin:0 0 22px"><span class="display" style="font-size:2rem;color:var(--gold-ink)">${peso(u.rate)}</span> <span class="muted">a night, Sunday to Thursday</span></p>
-      <div style="display:flex;gap:12px;flex-wrap:wrap"><button class="btn" data-act="openDates">${ic("cal")}Check availability</button><a class="btn ghost" href="#unit-${u.id}">See full details</a></div>
-    </div></div>`;
-}
-function unitCard(x, i) {
-  return `<a class="ucard rv ${i ? "dl1" : ""}" href="#unit-${x.id}"><div class="pwrap">${photo(x.cardPhoto, { cls: "zoom", hint: x.name + " cover photo" })}<span class="badge ${x.real ? "light" : "warn"}">${x.real ? stars() + " " : ""}${esc(x.feat)}</span></div>
-    <div class="meta"><h3>${esc(x.name)}</h3><p class="muted" style="margin:0">${esc(x.tagline)}</p>
-    <div class="facts-inline" style="margin-top:8px"><span>${ic("users", "sm")}Up to ${x.guests} guests</span><span>${ic("bed", "sm")}${x.bedrooms} bedroom, ${x.beds} beds</span><span>${ic("drop", "sm")}${x.baths} bath</span></div>
-    <div class="row"><span>From ${peso(x.rate)} a night</span>${ic("arrow")}</div></div></a>`;
-}
 function tourHTML() {
   const t = TOUR.find(x => x.id === S.tour), p = t.photos[S.tourI] || t.photos[0];
   return `<div class="wrap"><div class="shead rv"><div><p class="kicker">Home 2</p><h2 class="display d2">Take a look inside</h2></div><a class="btn ghost" href="#unit-home2">See Home 2 details</a></div>
@@ -1470,7 +1455,7 @@ function tourHTML() {
   <div class="tour rv" id="tourbox"><div><div class="stage"><button class="ph-btn" data-act="lightbox" data-set="tour" data-i="${S.tourI}" aria-label="Enlarge photo" style="all:unset;position:absolute;inset:0;cursor:zoom-in">${photo(p, { cls: "fadeswap" })}</button></div>
     ${t.photos.length > 1 ? `<div class="thumbs">${t.photos.map((q, i) => `<button data-act="tourPic" data-i="${i}" aria-label="Show ${esc(PHOTO_ALT[q])}" aria-current="${i === S.tourI}">${photo(q)}</button>`).join("")}</div>` : ""}</div>
     <div class="tourcopy fadeswap"><h3>${t.title}</h3><p class="muted">${t.text}</p><ul class="chk">${t.items.map(x => `<li>${ic("check", "sm")}<span>${x}</span></li>`).join("")}</ul>
-      <button class="btn" style="margin-top:28px" data-act="openDates" data-u="home2">${ic("cal")}Check dates for Home 2</button></div></div></div>`;
+      <button class="btn" style="margin-top:28px" data-act="plan">${ic("chat")}Ask Kish about dates</button></div></div></div>`;
 }
 function reviewsHTML(compact) {
   const all = compact ? S.revAllU : S.revAll, list = all ? REVIEWS : REVIEWS.slice(0, compact ? 3 : 4);
@@ -1483,401 +1468,97 @@ function reviewsHTML(compact) {
   <p class="src">Reviews from Home 2's Airbnb listing. Overall host rating across all stays: ${HOST.rating}.</p></div>`;
 }
 
-/* ---------- HOMES LIST ---------- */
-function unitsPage() {
-  return `<section class="phead"><div class="wrap"><div class="crumbs"><a href="#home">Home</a><span>/</span><span>Homes</span></div>
-    <h1 class="display d1">Kish's homes</h1><p class="lede" style="margin-top:14px">Two condo units, looked after the same way. Weekday prices are shown; Fridays, Saturdays and holidays cost a little more, and the calendar shows each night's price.</p></div></section>
-  <section class="wrap" style="display:grid;gap:64px;padding-top:30px;padding-bottom:40px">
-    ${UNITS.map((u, i) => `<article class="split rv">
-      <a href="#unit-${u.id}" style="display:block;aspect-ratio:4/3;${i % 2 ? "order:2" : ""}" aria-label="${esc(u.name)} details">${photo(u.cover, { style: "height:100%", hint: u.name + " photo" })}</a>
-      <div><span class="badge ${u.real ? "" : "warn"}">${esc(u.feat)}</span><h2 class="display d2" style="margin-top:16px">${esc(u.name)}</h2><p class="lede" style="margin-top:12px">${esc(u.tagline)}</p>
-        <div class="facts-inline" style="margin:18px 0 22px"><span>${ic("users")}Up to ${u.guests} guests</span><span>${ic("bed")}${u.bedrooms} bedroom, ${u.beds} beds</span><span>${ic("drop")}${u.baths} bath</span></div>
-        <div class="tblwrap"><table class="rtable"><thead><tr><th>Night</th><th>Price</th></tr></thead><tbody><tr><td>Sunday to Thursday</td><td class="num">${peso(u.rate)}</td></tr><tr><td>Friday and Saturday</td><td class="num">${peso(u.weekend)}</td></tr><tr><td>Christmas and New Year</td><td class="num">${peso(u.holiday)}</td></tr></tbody></table></div>
-        <div style="display:flex;gap:12px;margin-top:24px;flex-wrap:wrap"><a class="btn" href="#unit-${u.id}">See details</a><button class="btn ghost" data-act="openDates" data-u="${u.id}">${ic("cal")}Check dates</button></div>
-      </div></article>`).join("")}
-    <p class="tiny muted">Prices are samples until Kish confirms them.</p>
-  </section>`;
-}
 
 /* ---------- UNIT PAGE ---------- */
 function unitPage(id) {
   const u = unitById(id); if (!u) return notFound();
-  if (S.stay.unit !== id) { S.stay.unit = id; S.stay.in = S.stay.out = null; S.stay.guests = Math.min(S.stay.guests, u.guests); }
-  const st = S.stay, q = quote(id, st.in, st.out);
-  const pics = u.real ? ["bed1", "liv1", "kit1", "bal1", "pool1"] : [null, null, null, null, null];
+  const pics = ["bed1", "liv1", "kit1", "bal1", "pool1"];
   return `<section class="wrap" style="padding-top:30px">
     <div class="crumbs"><a href="#home">Home</a><span>/</span><span>${esc(u.name)}</span></div>
     <div style="display:flex;justify-content:space-between;align-items:flex-end;gap:20px;flex-wrap:wrap"><div><h1 class="display d1">${esc(u.name)}</h1><p class="lede" style="margin-top:10px">${esc(u.tagline)}</p></div>
     <button class="btn ghost sm" data-act="share">${ic("send", "sm")}Share</button></div>
-    <div class="mosaic">${pics.map((p, i) => `<button ${p ? `data-act="lightbox" data-set="all" data-i="${ALLPHOTOS.indexOf(p)}"` : ""} aria-label="${p ? "Open photo: " + esc(PHOTO_ALT[p]) : "Photo placeholder"}">${photo(p, { hint: i === 0 ? u.name + " photos" : "" })}</button>`).join("")}
-      ${u.real ? `<button class="btn light sm all" data-act="allPhotos">${ic("grid", "sm")}Show all ${ALLPHOTOS.length} photos</button>` : ""}</div>
+    <div class="mosaic">${pics.map(p => `<button data-act="lightbox" data-i="${ALLPHOTOS.indexOf(p)}" aria-label="Open photo: ${esc(PHOTO_ALT[p])}">${photo(p)}</button>`).join("")}
+      <button class="btn light sm all" data-act="allPhotos">${ic("grid", "sm")}Show all ${ALLPHOTOS.length} photos</button></div>
   </section>
   <div class="wrap ulayout">
     <div>
       <div style="padding-bottom:22px;border-bottom:1px solid var(--line)"><h2 style="font-size:1.25rem;font-weight:600">Entire condo unit in Cagayan de Oro</h2><p class="muted" style="margin:4px 0 0">${u.guests} guests, ${u.bedrooms} bedroom, ${u.beds} beds, ${u.baths} bath</p>
-        ${u.real ? `<button class="facts-inline link" style="margin-top:10px;text-decoration:none;color:var(--ink)" data-act="scrollTo" data-t="ureviews"><span>${stars()}<b>5.0</b>&nbsp;from 15 reviews</span></button>` : ""}</div>
+        <button class="facts-inline link" style="margin-top:10px;text-decoration:none;color:var(--ink)" data-act="scrollTo" data-t="ureviews"><span>${stars()}<b>5.0</b>&nbsp;from 15 reviews</span></button></div>
       <div class="hoststrip">${KISH}<div><b>Hosted by ${HOST.name}</b><div class="small muted">${HOST.years} years hosting, ${HOST.response.toLowerCase()}</div></div></div>
       <div class="hl"><div>${ic("pool")}<span><b>Dive right in</b><span>One of the few places in the area with a pool.</span></span></div><div>${ic("key")}<span><b>Self check-in</b><span>Let yourself in with the lockbox.</span></span></div><div>${ic("car")}<span><b>Free parking</b><span>A spot on the premises, at no extra cost.</span></span></div></div>
       <div class="usec"><p class="lede" style="margin:0">${esc(u.blurb)}</p></div>
-      <div class="usec"><h2>Where you'll sleep</h2><div class="beds">${u.sleep.map(([r, b, p]) => `<div style="padding:0;overflow:hidden">${photo(p, { style: "aspect-ratio:4/3;border-radius:0", hint: r })}<div style="padding:14px 16px"><b>${r}</b><br><span class="muted small">${b}</span></div></div>`).join("")}</div></div>
+      <div class="usec"><h2>Where you'll sleep</h2><div class="beds">${u.sleep.map(([r, b, p]) => `<div style="padding:0;overflow:hidden">${photo(p, { style: "aspect-ratio:4/3;border-radius:0" })}<div style="padding:14px 16px"><b>${r}</b><br><span class="muted small">${b}</span></div></div>`).join("")}</div></div>
       <div class="usec"><h2>What this place offers</h2><ul class="amen">${AMENITIES.map(([i, t]) => `<li>${ic(i)}${t}</li>`).join("")}</ul></div>
-      <div class="usec" id="avail"><h2>Availability</h2><p class="muted small" style="margin-top:-8px">The small number under each date is that night's price. Tap a check-in date, then a check-out date.</p>${calendarHTML(id, st, "page", calMsg)}</div>
-      ${u.real ? `<div class="usec" id="ureviews"><h2>Guest reviews</h2>${reviewsHTML(true)}</div>` : ""}
       <div class="usec"><h2>Prices</h2><div class="tblwrap"><table class="rtable"><thead><tr><th>Item</th><th>Price</th></tr></thead><tbody>
         <tr><td>Sunday to Thursday</td><td class="num">${peso(u.rate)}</td></tr><tr><td>Friday and Saturday</td><td class="num">${peso(u.weekend)}</td></tr><tr><td>Dec 24, 25, 31 and Jan 1</td><td class="num">${peso(u.holiday)}</td></tr>
         <tr><td>Cleaning fee, once per stay</td><td class="num">${peso(u.cleaning)}</td></tr><tr><td>Security deposit, refundable</td><td class="num">${peso(u.deposit)}</td></tr>
         <tr><td>7 nights or more</td><td class="num">10% off</td></tr><tr><td>28 nights or more</td><td class="num">25% off</td></tr></tbody></table></div><p class="tiny muted" style="margin-top:10px">Sample prices until Kish confirms them.</p></div>
+      <div class="usec" id="ureviews"><h2>Guest reviews</h2>${reviewsHTML(true)}</div>
       <div class="usec"><h2>Things to know</h2><div class="know" style="grid-template-columns:1fr">${KNOW.map(([i, t, l]) => `<div><h3>${ic(i)}${t}</h3><ul>${l.map(x => `<li>${x}</li>`).join("")}</ul></div>`).join("")}</div></div>
     </div>
-    <aside><div class="bcard" id="bcard">${bcardHTML(u, q)}</div></aside>
+    <aside><div class="bcard" id="bcard">
+      <div class="price">${peso(u.rate)} <small>a night, Sun to Thu</small></div>
+      <div class="ratelist"><div><span>Friday and Saturday</span><b>${peso(u.weekend)}</b></div><div><span>Holidays</span><b>${peso(u.holiday)}</b></div><div><span>Cleaning fee</span><b>${peso(u.cleaning)}</b></div></div>
+      <button class="btn block" data-act="plan">${ic("chat", "sm")}Message to book</button>
+      <p class="tiny muted" style="text-align:center;margin:10px 0 16px">Kish confirms availability and the total</p>
+      <div class="cgrid">${contactLinks("sm")}</div>
+      <div class="hint">${ic("shield", "sm")}<span>Plus a ${peso(u.deposit)} refundable deposit, returned at check-out.</span></div>
+    </div></aside>
   </div>`;
 }
-function bcardHTML(u, q) {
-  const st = S.stay;
-  return `<div class="price">${peso(u.rate)} <small>a night, Sun to Thu</small></div>
-    <div class="pick"><button type="button" data-act="openDates"><span class="lab">Check-in</span><span class="v">${st.in ? fmtD(st.in) : "Add date"}</span></button><button type="button" data-act="openDates"><span class="lab">Check-out</span><span class="v">${st.out ? fmtD(st.out) : "Add date"}</span></button>
-    <div class="g"><span><span class="lab">Guests</span><span class="v">${plural(st.guests, "guest")}</span></span><span class="stepper"><button type="button" data-act="guests" data-n="-1" aria-label="Fewer guests" ${st.guests <= 1 ? "disabled" : ""}>−</button><output>${st.guests}</output><button type="button" data-act="guests" data-n="1" aria-label="More guests" ${st.guests >= u.guests ? "disabled" : ""}>+</button></span></div></div>
-    <button class="btn block" data-act="${q ? "goBook" : "openDates"}">${q ? "Request to book" : "Choose dates"}</button>
-    <p class="tiny muted" style="text-align:center;margin:10px 0 0">You won't pay anything yet</p>
-    ${linesHTML(q, u)}
-    <div class="hint">${ic("lock", "sm")}<span>Your dates are held for 24 hours after you send a request, so no one can double-book them.</span></div>
-    <button class="btn ghost block sm" style="margin-top:18px" data-act="chat">${ic("chat", "sm")}Ask Kish a question</button>`;
-}
-
 function allPhotosHTML() {
   return `<div class="mh"><h2>All photos of ${esc(UNITS[0].name)}</h2><button class="x" data-act="close" aria-label="Close">${ic("x")}</button></div>
   <div class="mb"><div class="tabs" style="margin-bottom:8px">${TOUR.map(t => `<button class="tab" data-act="jump" data-t="ap-${t.id}">${ic(t.icon, "sm")}${t.label}</button>`).join("")}</div>
   ${TOUR.map(t => `<section id="ap-${t.id}" class="apsec"><h3>${t.title}</h3><p class="muted small">${t.text}</p><div class="apgrid">${t.photos.map(p => `<button data-act="lightbox" data-set="all" data-i="${ALLPHOTOS.indexOf(p)}" aria-label="Open photo: ${esc(PHOTO_ALT[p])}">${photo(p)}</button>`).join("")}</div></section>`).join("")}</div>`;
 }
+
 function mobileBar() {
-  const u = unitById(S.stay.unit), q = quote(u.id, S.stay.in, S.stay.out);
-  return `<div class="mbar" id="mbar"><div><b>${q ? peso(q.total) : peso(u.rate)}</b><span class="tiny muted">${q ? fmtRange(S.stay.in, S.stay.out) : "a night, Sun to Thu"}</span></div><button class="btn sm" data-act="${q ? "goBook" : "openDates"}">${q ? "Request to book" : "Check dates"}</button></div>`;
+  const u = UNITS[0];
+  return `<div class="mbar" id="mbar"><div><b>${peso(u.rate)}</b><span class="tiny muted">a night, Sun to Thu</span></div><button class="btn sm" data-act="plan">${ic("chat", "sm")}Message to book</button></div>`;
 }
-/* ---------- BOOKING FLOW ---------- */
-const STEPS = ["Your stay", "Your details", "Payment", "Review"];
-function bookPage() {
-  const st = S.stay, u = unitById(st.unit), q = quote(st.unit, st.in, st.out);
-  return `<section class="phead" style="padding-bottom:28px"><div class="wrap"><div class="crumbs"><a href="#home">Home</a><span>/</span><span>Book</span></div><h1 class="display d2">Request to book</h1><p class="muted" style="margin:8px 0 0">Four quick steps. You won't be charged until Kish confirms.</p></div></section>
-  <div class="wrap flow"><div>
-    <ol class="progress">${STEPS.map((s, i) => `<li class="${i + 1 === S.step ? "on" : i + 1 < S.step ? "done" : ""}" ${i + 1 === S.step ? 'aria-current="step"' : ""}><span class="n">${i + 1 < S.step ? ic("check", "sm") : i + 1}</span><span class="lbl">${s}</span></li>`).join("")}</ol>
-    <div id="stepbody">${[step1, step2, step3, step4][S.step - 1](u, q)}</div>
-  </div>
-  <aside><div class="bcard">${summaryCard(u, q)}</div></aside></div>`;
-}
-function summaryCard(u, q) {
-  const st = S.stay;
-  return `<div style="display:grid;grid-template-columns:96px 1fr;gap:14px;align-items:center;padding-bottom:18px;border-bottom:1px solid var(--line)"><div style="aspect-ratio:1">${photo(u.cardPhoto, { style: "height:100%;border-radius:12px", hint: "" })}</div>
-    <div><b style="font-family:var(--display);font-weight:400;font-size:1.25rem">${esc(u.name)}</b><div class="small muted">Up to ${u.guests} guests, hosted by Kish</div>${u.real ? `<div class="small" style="display:flex;gap:6px;align-items:center;margin-top:4px;color:var(--gold-ink)">${STAR}<b>5.0</b><span class="muted">(15)</span></div>` : ""}</div></div>
-    <dl class="kv" style="margin-top:18px"><dt>Dates</dt><dd>${fmtRange(st.in, st.out)}</dd><dt>Guests</dt><dd>${plural(st.guests, "guest")}</dd>${S.pay ? `<dt>Payment</dt><dd>${{ gcash: "GCash", bank: "Bank transfer", cash: "Cash on arrival" }[S.pay]}</dd>` : ""}</dl>
-    ${linesHTML(q, u)}`;
-}
-function step1(u, q) {
-  const st = S.stay;
-  return `<h2 class="display d3" style="margin-bottom:20px">${UNITS.length < 2 ? "When are you coming?" : "Choose your home and dates"}</h2>
-  ${UNITS.length < 2 ? "" : `<div class="choice" role="radiogroup" aria-label="Home" style="margin-bottom:30px">${UNITS.map(x => `<button type="button" class="opt" role="radio" aria-checked="${x.id === st.unit}" data-act="flowUnit" data-u="${x.id}"><span class="radio"></span><span><b>${esc(x.name)}</b><span class="d">Up to ${x.guests} guests, from ${peso(x.rate)} a night${x.real ? "" : " (details coming soon)"}</span></span>${ic("home")}</button>`).join("")}</div>`}
-  ${calendarHTML(st.unit, st, "flow", calMsg)}
-  <div class="setrow" style="margin-top:22px;border-top:1px solid var(--line)"><div><b>Guests</b><div class="small muted">Up to ${u.guests} in ${esc(u.name)}</div></div><span class="stepper"><button type="button" data-act="guests" data-n="-1" aria-label="Fewer guests" ${st.guests <= 1 ? "disabled" : ""}>−</button><output>${st.guests}</output><button type="button" data-act="guests" data-n="1" aria-label="More guests" ${st.guests >= u.guests ? "disabled" : ""}>+</button></span></div>
-  <div class="navrow"><a class="btn ghost" href="#unit-home2">${ic("back")}Back to the unit</a><button class="btn" data-act="step" data-n="2" ${q ? "" : "disabled"}>Continue${ic("arrow")}</button></div>`;
-}
-function fld(id, label, val, o = {}) {
-  return `<div class="field ${o.full ? "full" : ""}" id="f-${id}"><label for="${id}">${label}${o.opt ? ' <span class="muted" style="font-weight:400">(optional)</span>' : ""}</label>
-  ${o.ta ? `<textarea id="${id}" data-in="${id}" placeholder="${o.ph || ""}">${esc(val)}</textarea>` : o.sel ? `<select id="${id}" data-in="${id}">${o.sel.map(s => `<option ${s === val ? "selected" : ""}>${s}</option>`).join("")}</select>` : `<input id="${id}" data-in="${id}" type="${o.type || "text"}" value="${esc(val)}" autocomplete="${o.ac || "off"}" ${o.im ? `inputmode="${o.im}"` : ""} placeholder="${o.ph || ""}">`}
-  ${o.help ? `<span class="help">${o.help}</span>` : ""}<span class="err" role="alert">${ic("alert", "sm")}${o.err || "This is required"}</span></div>`;
-}
-function step2() {
-  const g = S.guest;
-  return `<h2 class="display d3" style="margin-bottom:8px">Who's staying?</h2><p class="muted" style="margin-bottom:26px">Kish uses these to confirm your booking and send your check-in details.</p>
-  <div class="fgrid">
-    ${fld("first", "First name", g.first, { ac: "given-name", err: "Enter your first name" })}${fld("last", "Last name", g.last, { ac: "family-name", err: "Enter your last name" })}
-    ${fld("phone", "Mobile number", g.phone, { type: "tel", im: "tel", ac: "tel", ph: "0917 123 4567", help: "We text your confirmation here.", err: "Enter an 11-digit mobile number starting with 09" })}
-    ${fld("email", "Email", g.email, { type: "email", ac: "email", ph: "you@email.com", help: "For your receipt and directions.", err: "Enter a valid email address" })}
-    ${fld("arrive", "Expected arrival", g.arrive, { sel: ["2:00 PM to 4:00 PM", "4:00 PM to 6:00 PM", "6:00 PM to 9:00 PM", "After 9:00 PM", "Not sure yet"] })}
-    <div class="field"><span style="font-weight:600;font-size:.92rem">Valid ID</span><span class="help" style="padding-top:12px">Please bring one government ID. The building may log guests at the lobby.</span></div>
-    ${fld("notes", "Anything we should know?", g.notes, { ta: 1, full: 1, opt: 1, ph: "Late arrival, need parking, celebrating a birthday..." })}
-  </div>
-  <div class="navrow"><button class="btn ghost" data-act="step" data-n="1">${ic("back")}Back</button><button class="btn" data-act="step" data-n="3">Continue${ic("arrow")}</button></div>`;
-}
-function step3(u, q) {
-  const P = [["gcash", "wallet", "GCash", "Pay now, upload your receipt"], ["bank", "bank", "Bank transfer", "BDO or BPI, upload the slip or screenshot"], ["cash", "cash", "Cash on arrival", "Pay the full amount at check-in"]];
-  let box = "";
-  if (S.pay === "gcash") box = `<div class="paybox"><div class="qr">${photo(null, { cls: "qrph", hint: "GCash QR" })}</div><div><b style="font-size:1.05rem">Send ${peso(q.total)} by GCash</b>
-    <dl class="kv" style="margin:14px 0"><dt>Number</dt><dd>[GCash number]</dd><dt>Name</dt><dd>Keziah L.</dd><dt>Amount</dt><dd class="num">${peso(q.total)}</dd></dl>
-    <p class="small muted" style="margin:0">Scan the QR in your GCash app or send to the number, then take a screenshot of the receipt.</p></div></div>${uploadHTML()}`;
-  if (S.pay === "bank") box = `<div class="paybox" style="grid-template-columns:1fr"><div><b style="font-size:1.05rem">Transfer ${peso(q.total)} to either account</b>
-    <div class="fgrid" style="margin-top:16px"><dl class="kv"><dt>Bank</dt><dd>[Bank name]</dd><dt>Name</dt><dd>Keziah Leigh [Surname]</dd><dt>Account</dt><dd>[Account number]</dd></dl><dl class="kv"><dt>Bank</dt><dd>[Second bank, optional]</dd><dt>Name</dt><dd>Keziah Leigh [Surname]</dd><dt>Account</dt><dd>[Account number]</dd></dl></div>
-    <p class="small muted" style="margin:14px 0 0">Put your reference number in the notes if your bank allows it. InstaPay and PESONet both work.</p></div></div>${uploadHTML()}`;
-  if (S.pay === "cash") box = `<div class="paybox" style="grid-template-columns:auto 1fr">${ic("info", "lg")}<div><b>Pay ${peso(q.total)} in cash when you arrive</b><p class="small muted" style="margin:8px 0 0">Your dates are held for 24 hours. Kish will call or text to confirm your arrival time, and then you're booked. Please bring the exact amount if you can, plus the ${peso(q.deposit)} refundable deposit.</p></div></div>`;
-  return `<h2 class="display d3" style="margin-bottom:8px">How would you like to pay?</h2><p class="muted" style="margin-bottom:24px">Your dates are already being held for you while you finish.</p>
-  <div class="choice" role="radiogroup" aria-label="Payment method">${P.map(([id, i, t, d]) => `<button type="button" class="opt" role="radio" aria-checked="${S.pay === id}" data-act="pay" data-p="${id}"><span class="radio"></span><span><b>${t}</b><span class="d">${d}</span></span>${ic(i)}</button>`).join("")}</div>
-  ${box}<div id="payerr" aria-live="polite"></div>
-  <div class="navrow"><button class="btn ghost" data-act="step" data-n="2">${ic("back")}Back</button><button class="btn" data-act="step" data-n="4">Continue${ic("arrow")}</button></div>`;
-}
-function uploadHTML() {
-  return `<label class="drop" id="drop" for="rcpt">${ic("upload")}<b>Upload your receipt</b><br><span class="small muted">Screenshot or photo. JPG, PNG or PDF, up to 10 MB. You can also do this later from "My booking".</span><input id="rcpt" type="file" accept="image/*,.pdf" class="sr" data-change="file"></label>
-  ${S.file ? `<div class="filecard"><div class="thumb">${S.file.url ? `<img src="${S.file.url}" alt="Receipt preview">` : ic("receipt")}</div><div style="flex:1;min-width:0"><b style="display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${esc(S.file.name)}</b><span class="small muted">${S.file.size}, ready to send</span></div><button class="x" data-act="rmFile" aria-label="Remove file">${ic("x")}</button></div>` : ""}`;
-}
-function step4(u, q) {
-  const g = S.guest, st = S.stay;
-  return `<h2 class="display d3" style="margin-bottom:22px">Check everything, then send</h2>
-  <div class="panel" style="padding:0"><div style="padding:20px 22px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:12px"><div><b>Your stay</b><div class="muted small">${esc(u.name)}, ${fmtD(st.in, { dow: true, year: true })} to ${fmtD(st.out, { dow: true, year: true })}, ${plural(st.guests, "guest")}</div></div><button class="link small" data-act="step" data-n="1">Change</button></div>
-  <div style="padding:20px 22px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:12px"><div><b>Guest</b><div class="muted small">${esc(g.first)} ${esc(g.last)}<br>${esc(g.phone)}, ${esc(g.email)}<br>Arriving ${esc(g.arrive)}${g.notes ? `<br>“${esc(g.notes)}”` : ""}</div></div><button class="link small" data-act="step" data-n="2">Change</button></div>
-  <div style="padding:20px 22px;display:flex;justify-content:space-between;gap:12px"><div><b>Payment</b><div class="muted small">${{ gcash: "GCash", bank: "Bank transfer", cash: "Cash on arrival" }[S.pay]}${S.pay !== "cash" ? (S.file ? `, receipt attached (${esc(S.file.name)})` : ", receipt to follow") : ""}</div></div><button class="link small" data-act="step" data-n="3">Change</button></div></div>
-  <label style="display:flex;gap:12px;align-items:flex-start;margin-top:24px;cursor:pointer"><input type="checkbox" id="agree" style="width:20px;height:20px;margin-top:3px;accent-color:var(--gold-ink)"><span class="small">I've read the <a href="#goodtoknow">house rules</a> and cancellation policy. I'll bring a valid ID and the ${peso(q.deposit)} refundable deposit.</span></label>
-  <div id="agreeerr" aria-live="polite"></div>
-  <div class="navrow"><button class="btn ghost" data-act="step" data-n="3">${ic("back")}Back</button><button class="btn" data-act="submit" id="sendbtn">${ic("send", "sm")}Send booking request</button></div>`;
-}
-/* ---------- CONFIRMATION / TRACK / CONTACT ---------- */
-const STATUS = { pending: ["Awaiting confirmation", "warn"], confirmed: ["Confirmed", "river"], checkedin: ["Checked in", "ink"], completed: ["Completed", "ink"], cancelled: ["Cancelled", "bad"] };
-function holdLeft(b) { const ms = Math.max(0, b.holdUntil - Date.now()), h = Math.floor(ms / 36e5), m = Math.floor(ms % 36e5 / 6e4), s = Math.floor(ms % 6e4 / 1e3); return `${pad(h)}:${pad(m)}:${pad(s)}`; }
-function statusTimeline(b) {
-  const paid = b.status !== "pending", hasR = b.receipt || b.method === "cash";
-  const it = [
-    ["Request sent", fmtD(iso(new Date(b.created)), { dow: true }) + ", dates held for you", true],
-    [b.method === "cash" ? "Arrival time confirmed" : "Receipt received", b.method === "cash" ? "Kish will call or text you" : hasR ? "Kish has your receipt" : "Upload your receipt to continue", paid || (b.method !== "cash" && hasR)],
-    ["Booking confirmed", paid ? "Text and email sent with directions" : "Usually within the hour", paid],
-    ["Check-in", fmtD(b.in, { dow: true, year: true }) + ", after 2:00 PM", b.status === "checkedin" || b.status === "completed"]
-  ];
-  const nowI = it.findIndex(x => !x[2]);
-  return `<ol class="timeline">${it.map(([t, s, on], i) => `<li class="${on ? "on" : i === nowI ? "now" : ""}"><span class="pt">${on ? ic("check", "sm") : ""}</span><div><b>${t}</b><span>${s}</span></div></li>`).join("")}</ol>`;
-}
-function donePage() {
-  const b = BOOKINGS.find(x => x.ref === S.lastRef); if (!b) { location.hash = "#book"; return ""; }
-  const u = UNITS.find(x => x.id === b.unit);
-  return `<div class="wrap"><div class="done">
-    <div class="seal"><svg viewBox="0 0 52 52" aria-hidden="true"><circle class="sc" cx="26" cy="26" r="24"/><path class="sk" d="M15 27l7 7 15-16"/></svg></div>
-    <p class="kicker">Request sent</p><h1 class="display d2">Salamat, ${esc(b.guest.split(" ")[0])}! Your dates are on hold.</h1>
-    <p class="lede" style="margin-top:18px">${esc(u.name)} is held for you, ${fmtRange(b.in, b.out)}. ${b.method === "cash" ? "Kish will call or text you today to confirm your arrival time." : b.receipt ? "Kish will check your receipt and confirm by text and email, usually within the hour." : "Upload your payment receipt within 24 hours to keep these dates."}</p>
-    <div class="refbox"><div><span class="small muted">Your booking reference</span><div class="ref">${b.ref}</div></div>
-      <div style="text-align:right"><span class="small muted">Dates held for</span><div class="countdown" data-hold="${b.ref}" style="font-size:1.4rem">${holdLeft(b)}</div></div></div>
-    <div class="split" style="gap:40px;align-items:start"><div><h2 class="t" style="font-family:var(--display);font-weight:400;font-size:1.35rem">What happens next</h2>${statusTimeline(b)}</div>
-      <div class="panel"><h3 style="font-weight:600;margin-bottom:12px">Your total</h3>${linesHTML(quote(b.unit, b.in, b.out), u)}</div></div>
-    <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:30px">${!b.receipt && b.method !== "cash" ? `<button class="btn" data-act="lateReceipt" data-ref="${b.ref}">${ic("upload", "sm")}Upload receipt now</button>` : ""}<button class="btn ${!b.receipt && b.method !== "cash" ? "ghost" : ""}" data-act="emailPrev" data-ref="${b.ref}">${ic("mail", "sm")}See the email you'd get</button><a class="btn ghost" href="#track">Track this booking</a>
-      <button class="btn ghost" data-act="mode" data-m="owner">${ic("eye", "sm")}See it as the owner</button></div>
-    <p class="small muted" style="margin-top:22px">Demo tip: switch to Owner view. Your request is waiting there under "Needs your action".</p>
-  </div></div>`;
-}
-function trackPage() {
-  return `<section class="phead"><div class="wrap"><div class="crumbs"><a href="#home">Home</a><span>/</span><span>My booking</span></div><h1 class="display d2">Find my booking</h1><p class="lede" style="margin-top:14px">Check your status, upload a receipt, or see your check-in details.</p></div></section>
-  <section class="wrap" style="padding-top:30px;padding-bottom:40px;max-width:820px">
-    <div class="fgrid">${fld("tref", "Booking reference", S.lastRef || "", { ph: "HBK-0000-0000", help: "It's in your text and email." })}${fld("tlast", "Last name", S.lastRef ? S.guest.last : "", { err: "Enter the last name on the booking" })}</div>
-    <button class="btn" style="margin-top:20px" data-act="track">${ic("search", "sm")}Find booking</button>
-    <p class="tiny muted" style="margin-top:12px">Demo: try <button class="link tiny" data-act="tryRef">${BOOKINGS.find(b => b.status === "confirmed").ref}</button> with any last name.</p>
-    <div id="trackout" aria-live="polite" style="margin-top:34px"></div></section>`;
-}
-function trackResult(b) {
-  const u = UNITS.find(x => x.id === b.unit), [lab, cls] = STATUS[b.status];
-  return `<div class="panel"><header><div><span class="badge ${cls}">${lab}</span><h2 style="font-family:var(--display);font-weight:400;font-size:1.5rem;margin-top:10px">${esc(u.name)}</h2><span class="muted small">${b.ref}, ${fmtRange(b.in, b.out)}, ${plural(b.guests, "guest")}</span></div></header>
-  ${statusTimeline(b)}
-  ${b.status === "pending" && !b.receipt && b.method !== "cash" ? `<button class="btn" data-act="demo" data-w="Receipt uploaded">${ic("upload", "sm")}Upload receipt</button>` : ""}
-  ${b.status === "confirmed" ? `<div class="paybox" style="grid-template-columns:auto 1fr">${ic("key", "lg")}<div><b>Check-in details</b><p class="small muted" style="margin:6px 0 0">Self check-in after 2:00 PM. Kish sends the lockbox code the day before. Drop your bags at the elevator before parking, since the parking spot is a short walk away. Wi-Fi details are inside the unit.</p></div></div>` : ""}
-  <div style="display:flex;gap:10px;margin-top:18px;flex-wrap:wrap"><button class="btn ghost sm" data-act="chat">${ic("chat", "sm")}Message Kish</button>${b.status !== "cancelled" && b.status !== "completed" ? `<button class="btn danger sm" data-act="demo" data-w="Cancellation request sent">Request cancellation</button>` : ""}</div></div>`;
-}
+
+/* ---------- CONTACT ---------- */
 function contactPage() {
-  return `<section class="phead"><div class="wrap"><div class="crumbs"><a href="#home">Home</a><span>/</span><span>Contact</span></div><h1 class="display d1">Say hi to Kish</h1><p class="lede" style="margin-top:14px">Questions before you book, a special request, or help during your stay. Messenger is the fastest.</p></div></section>
+  return `<section class="phead"><div class="wrap"><div class="crumbs"><a href="#home">Home</a><span>/</span><span>Contact</span></div><h1 class="display d1">Say hi to Kish</h1><p class="lede" style="margin-top:14px">Questions, bookings, or help during your stay. Messenger is the fastest.</p></div></section>
   <section class="wrap split" style="padding-top:30px;padding-bottom:40px;align-items:start">
-    <div style="display:grid;gap:14px">
-      <div class="panel">${ic("chat", "lg")}<h3 style="margin:12px 0 4px">Messenger</h3><p class="muted small">${HOST.response}.</p><button class="btn sm" data-act="demo" data-w="Opening Messenger">Message Kish</button></div>
-      <div class="panel">${ic("phone", "lg")}<h3 style="margin:12px 0 4px">Call or text</h3><p class="muted small">[Mobile number]. For anything urgent during your stay.</p><button class="btn ghost sm" data-act="demo" data-w="Calling Kish">Call now</button></div>
-      <div class="panel">${ic("mail", "lg")}<h3 style="margin:12px 0 4px">Email</h3><p class="muted small">[Email address]. Good for longer questions and company bookings.</p><button class="btn ghost sm" data-act="demo" data-w="Opening your email app">Send an email</button></div>
-    </div>
-    <div><h2 class="display d3" style="margin-bottom:20px">Or leave a message here</h2>
-      <div class="fgrid">${fld("cname", "Your name", "", { full: 1 })}${fld("cphone", "Mobile number", "", { type: "tel", im: "tel" })}${fld("cmail", "Email", "", { type: "email", opt: 1 })}${fld("cmsg", "Message", "", { ta: 1, full: 1, ph: "Which home, which dates, how many guests?" })}</div>
-      <button class="btn" style="margin-top:20px" data-act="contactSend">${ic("send", "sm")}Send message</button></div>
+    <div><div class="cgrid big">${contactLinks()}</div>
+      <div class="panel" style="margin-top:16px;display:flex;gap:14px;align-items:center">${KISH}<div><b>${HOST.name}</b><div class="small muted">${HOST.response}. Speaks ${HOST.langs}.</div></div></div></div>
+    <div><h2 class="display d3" style="margin-bottom:18px">Plan your stay</h2>${planHTML(true)}</div>
   </section>`;
 }
-function notFound() { return `<div class="wrap done"><h1 class="display d2">That page isn't here</h1><p class="lede" style="margin-top:14px">The link may be old. Start from the home page or see all units.</p><div style="display:flex;gap:12px"><a class="btn" href="#home">Go home</a><a class="btn ghost" href="#units">See units</a></div></div>`; }
+function notFound() { return `<div class="wrap done"><h1 class="display d2">That page isn't here</h1><p class="lede" style="margin-top:14px">The link may be old. Start from the home page.</p><a class="btn" href="#home">Go home</a></div>`; }
 
 /* ---------- lightbox ---------- */
-let LB = { list: [], i: 0 };
+let LB = { list: ALLPHOTOS, i: 0 };
 function lightbox() {
   const id = LB.list[LB.i];
   return `<div class="lb"><div class="lbstage">${photo(id, { cls: "fadeswap" })}</div>
   <div class="bar"><button data-act="lbNav" data-n="-1" aria-label="Previous photo">${ic("left")}</button><span class="small" style="text-align:center">${esc(PHOTO_ALT[id] || "")}<br><span style="opacity:.7">${LB.i + 1} of ${LB.list.length}</span></span><span style="display:flex;gap:8px"><button data-act="lbNav" data-n="1" aria-label="Next photo">${ic("right")}</button><button data-act="close" aria-label="Close">${ic("x")}</button></span></div></div>`;
 }
-
-/* ---------- emails ---------- */
-function emailHTML(kind, b) {
-  const u = unitById(b.unit), q = quote(b.unit, b.in, b.out), first = b.guest.split(" ")[0];
-  const head = `<div class="eh"><b>Home by Kish</b></div>`;
-  const rows = `<div class="row"><span>Reference</span><b>${b.ref}</b></div><div class="row"><span>Home</span><b>${esc(u.name)}</b></div><div class="row"><span>Check-in</span><b>${fmtD(b.in, { dow: true, year: true })}, after 2:00 PM</b></div><div class="row"><span>Check-out</span><b>${fmtD(b.out, { dow: true, year: true })}, before 11:00 AM</b></div><div class="row"><span>Guests</span><b>${b.guests}</b></div><div class="row"><span>Total</span><b>${peso(q.total)}</b></div>`;
-  const foot = `<div class="ef">Home by Kish, Cagayan de Oro. Reply to this email or message Kish on Facebook.</div>`;
-  if (kind === "received") return `<p class="meta">To: ${esc(b.email)}<br>Subject: Got your request, ${esc(first)}! (${b.ref})</p><div class="email">${head}<div class="eb"><h3>Your dates are on hold</h3><p>Hi ${esc(first)}, thank you for choosing Home by Kish! I'm holding ${esc(u.name)} for you for 24 hours while I check your payment.</p>${rows}<p style="margin-top:16px">${b.method === "cash" ? "You chose cash on arrival. I'll call or text to confirm your arrival time." : "I'll confirm as soon as I've checked your receipt, usually within the hour."}</p><p style="margin:0">Kish</p></div>${foot}</div>`;
-  if (kind === "confirmed") return `<p class="meta">To: ${esc(b.email)}<br>Subject: You're booked! ${esc(u.name)}, ${fmtD(b.in)}</p><div class="email">${head}<div class="eb"><h3>See you soon, ${esc(first)}</h3><p>Payment received, thank you! Here's everything you need.</p>${rows}<p style="margin-top:16px"><b>Getting in:</b> self check-in with the lockbox. I'll send the code the day before you arrive.</p><p><b>Parking:</b> free on the premises. Tip: drop your bags at the elevator first, since the parking spot is a short walk away.</p><p><b>Bring:</b> one valid ID and the ${peso(u.deposit)} refundable deposit.</p><p style="margin:0">Kish</p></div>${foot}</div>`;
-  return `<p class="meta">To: Kish<br>Subject: New request: ${esc(b.guest)}, ${fmtRange(b.in, b.out)}</p><div class="email">${head}<div class="eb"><h3>New request to check</h3><p>${esc(b.guest)} wants ${esc(u.name)} for ${plural(diff(b.in, b.out), "night")}. Payment: ${{ gcash: "GCash", bank: "bank transfer", cash: "cash on arrival" }[b.method]}${b.receipt ? ", receipt attached" : ""}.</p>${rows}<div class="row"><span>Mobile</span><b>${esc(b.phone)}</b></div><p style="margin-top:16px">Dates are held until ${new Date(b.holdUntil).toLocaleString("en-PH", { weekday: "short", hour: "numeric", minute: "2-digit" })}. Open the owner page to confirm or decline.</p></div>${foot}</div>`;
-}
-/* ---------- OWNER (ADMIN) ---------- */
-const ANAV = [["owner", "home", "Today"], ["owner-bookings", "list", "Bookings"], ["owner-calendar", "cal", "Calendar"], ["owner-rates", "tag", "Prices"], ["owner-emails", "mail", "Guest messages"], ["owner-report", "chart", "Monthly report"]];
-const pendingCount = () => BOOKINGS.filter(b => b.status === "pending").length;
-function loginPage() {
-  return `<div class="login"><div class="card"><div style="display:flex;justify-content:center;margin-bottom:24px;text-align:center">${BRAND("#owner", "Owner page")}</div>
-    <h1 style="font-family:var(--display);font-weight:400;font-size:1.5rem">Owner sign-in</h1><p class="muted small" style="margin:8px 0 0">Enter your 4-digit PIN. For this demo, any 4 digits work.</p>
-    <div class="pins" aria-label="${S.pin.length} of 4 digits entered">${[0,1,2,3].map(i => `<i class="${i < S.pin.length ? "f" : ""}"></i>`).join("")}</div>
-    <div class="pinpad">${[1,2,3,4,5,6,7,8,9].map(n => `<button data-act="pin" data-k="${n}" aria-label="${n}">${n}</button>`).join("")}<span></span><button data-act="pin" data-k="0">0</button><button data-act="pin" data-k="del" aria-label="Delete">${ic("back")}</button></div>
-    <p class="tiny muted" style="margin-top:22px">Works on a phone too, so bookings can be checked from anywhere.</p></div></div>`;
-}
-function adminShell(cur, body) {
-  const pc = pendingCount();
-  return `<div class="admin"><nav class="side" aria-label="Owner menu">${BRAND("#owner", "Owner page")}
-    ${ANAV.map(([h, i, t]) => `<a class="it" href="#${h}" ${cur === h ? 'aria-current="page"' : ""}>${ic(i)}${t}${h === "owner-bookings" && pc ? `<span class="cnt">${pc}</span>` : ""}</a>`).join("")}
-    <div class="foot"><a class="it" href="#home" data-act="mode" data-m="guest">${ic("eye")}View guest site</a><button class="it link" style="text-decoration:none;color:var(--muted);font-weight:500;display:flex;gap:12px;padding:11px 12px" data-act="logout">${ic("out")}Sign out</button></div></nav>
-    <main class="main" id="amain">${body}</main></div>`;
-}
-function bRow(b) {
-  const u = UNITS.find(x => x.id === b.unit), [lab, cls] = STATUS[b.status];
-  return `<tr data-act="openB" data-ref="${b.ref}" tabindex="0"><td><div class="who"><span class="avatar" style="background:${avColor(b.guest)}">${initials(b.guest)}</span><div><b>${esc(b.guest)}</b><div class="tiny muted">${b.ref}</div></div></div></td>
-    ${UNITS.length > 1 ? `<td class="un">${esc(u.short)}</td>` : ""}<td class="num dt">${fmtRange(b.in, b.out)}<div class="tiny muted">${plural(diff(b.in, b.out), "night")}</div></td><td class="pm">${{ gcash: "GCash", bank: "Bank", cash: "Cash" }[b.method]}</td><td class="num tot">${peso(b.total)}</td><td class="st"><span class="badge ${cls}">${lab}</span></td></tr>`;
-}
-function overview() {
-  const pend = BOOKINGS.filter(b => b.status === "pending").sort((a, b) => a.holdUntil - b.holdUntil);
-  const arrive = BOOKINGS.filter(b => b.in === TODAY && b.status !== "cancelled"), leave = BOOKINGS.filter(b => b.out === TODAY && b.status !== "cancelled");
-  const m0 = monthStart(TODAY), m1 = addMonths(m0, 1), dim = diff(m0, m1);
-  let nights = 0, rev = 0;
-  UNITS.forEach(u => { for (let i = 0; i < dim; i++) { const d = addDays(m0, i), b = bookingAt(u.id, d); if (b && b.status !== "pending") { nights++; rev += nightPrice(u.id, d).p; } } });
-  const occ = Math.round(nights / (dim * UNITS.length) * 1000) / 10;
-  const next = [];
-  for (let i = 0; i < 10; i++) { const d = addDays(TODAY, i), ev = []; BOOKINGS.forEach(b => { if (b.status === "cancelled") return; if (b.in === d) ev.push(["in", b]); if (b.out === d) ev.push(["out", b]); }); if (ev.length) next.push([d, ev]); }
-  return `<div class="atop"><div><p class="muted small" style="margin:0">${fmtD(TODAY, { dow: true, year: true })}</p><h1>${hello()}, Keziah</h1></div><a class="btn sm ghost" href="#owner-calendar">${ic("ban", "sm")}Block dates</a></div>
-  <div class="stats">
-    <div><span>Needs your action</span><b>${pend.length}</b><em style="color:var(--warn)">${pend.length ? "payments to check" : "all clear"}</em></div>
-    <div><span>Arriving today</span><b>${arrive.length}</b><em>${leave.length} leaving today</em></div>
-    <div><span>Occupancy, ${MONTHS[parse(m0).getMonth()]}</span><b>${occ}%</b><em>${nights} of ${dim * UNITS.length} nights</em></div>
-    <div><span>Earned this month</span><b class="num" style="font-size:1.9rem">${peso(rev)}</b><em>confirmed stays</em></div></div>
-  <div class="agrid"><div>
-    <section class="panel"><header><h2>Needs your action</h2><a class="link small" href="#owner-bookings" data-act="filter" data-f="pending">See all</a></header>
-      ${pend.length ? pend.map(b => { const u = UNITS.find(x => x.id === b.unit); return `<div class="act"><span class="avatar" style="background:${avColor(b.guest)}">${initials(b.guest)}</span><div><b>${esc(b.guest)}, ${esc(u.short)}</b><span>${fmtRange(b.in, b.out)}, ${peso(b.total)} by ${{ gcash: "GCash", bank: "bank", cash: "cash" }[b.method]}. Held <span class="countdown" data-hold="${b.ref}">${holdLeft(b)}</span></span></div>
-        <div style="display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end">${b.receipt ? `<button class="btn ghost sm" data-act="receipt" data-ref="${b.ref}">${ic("receipt", "sm")}Receipt</button>` : `<span class="badge warn">${b.method === "cash" ? "Call to confirm" : "No receipt yet"}</span>`}<button class="btn sm" data-act="confirm" data-ref="${b.ref}">Confirm</button></div></div>`; }).join("")
-      : `<div class="empty">${ic("check")}<b>Nothing waiting.</b><br>New booking requests and receipts will show up here.</div>`}</section>
-    <section class="panel"><header><h2>Next 10 days</h2><a class="link small" href="#owner-calendar">Open calendar</a></header><div class="agenda">
-      ${next.length ? next.map(([d, ev]) => `<div class="d"><div class="dt"><b>${parse(d).getDate()}</b><span>${d === TODAY ? "Today" : DOW[parse(d).getDay()]}</span></div><div>${ev.map(([k, b]) => `<button class="ev link" style="text-decoration:none;color:var(--ink);font-weight:400" data-act="openB" data-ref="${b.ref}"><i style="background:${k === "in" ? "var(--sage)" : "var(--gold)"}"></i><b style="font-weight:600">${k === "in" ? "Check-in" : "Check-out"}</b>&nbsp;${esc(b.guest)}, ${esc(UNITS.find(x => x.id === b.unit).short)}${b.status === "pending" ? ' <span class="badge warn" style="margin-left:6px">unpaid</span>' : ""}</button>`).join("")}</div></div>`).join("") : `<div class="empty">${ic("cal")}No arrivals or departures in the next 10 days.</div>`}
-    </div></section></div>
-    <div><section class="panel"><header><h2>Occupancy this month</h2></header><div class="bars">${UNITS.map(u => { let n = 0; for (let i = 0; i < dim; i++) { const s = nightState(u.id, addDays(m0, i)); if (s === "booked") n++; } const p = Math.round(n / dim * 100); return `<div class="r"><span>${esc(u.short)}</span><span class="t"><i style="width:${p}%"></i></span><b class="num">${p}%</b></div>`; }).join("")}</div></section>
-    <section class="panel"><header><h2>Recent activity</h2></header>${BOOKINGS.slice().sort((a, b) => b.created - a.created).slice(0, 5).map(b => `<div class="act" style="grid-template-columns:auto 1fr"><span class="avatar" style="background:${avColor(b.guest)};width:34px;height:34px;font-size:.78rem">${initials(b.guest)}</span><div><b style="font-size:.92rem">${esc(b.guest)} ${b.status === "pending" ? "sent a request" : b.status === "cancelled" ? "cancelled" : "booked"}</b><span>${esc(UNITS.find(x => x.id === b.unit).short)}, ${fmtRange(b.in, b.out)}, via ${b.source}</span></div></div>`).join("")}</section>
-    <section class="panel" style="background:var(--gold-soft);border-color:var(--gold-soft)"><header><h2>Synced with Airbnb</h2><span class="badge sage">Optional</span></header><p class="small" style="margin:0">Home 2 is also on Airbnb. Its Airbnb bookings can block dates here automatically, and website bookings can block dates on Airbnb, so the same night is never booked twice.</p></section>
-  </div></div>`;
-}
-function bookingsPage() {
-  const F = [["all", "All"], ["pending", "Needs action"], ["confirmed", "Confirmed"], ["checkedin", "Checked in"], ["completed", "Completed"], ["cancelled", "Cancelled"]];
-  const q = S.bSearch.toLowerCase();
-  const list = BOOKINGS.filter(b => (S.bFilter === "all" || b.status === S.bFilter) && (!q || (b.guest + b.ref + b.phone).toLowerCase().includes(q))).sort((a, b) => a.in < b.in ? -1 : 1);
-  return `<div class="atop"><h1>Bookings</h1><button class="btn sm" data-act="manual">${ic("plus", "sm")}Add a booking</button></div>
-  <section class="panel"><header><div class="chips" role="group" aria-label="Filter bookings">${F.map(([k, t]) => `<button class="chip" data-act="filter" data-f="${k}" aria-pressed="${S.bFilter === k}">${t} <span class="c">${k === "all" ? BOOKINGS.length : BOOKINGS.filter(b => b.status === k).length}</span></button>`).join("")}</div>
-    <div class="prefix" style="width:min(280px,100%)"><span>${ic("search", "sm")}</span><input class="input" style="min-height:42px" placeholder="Name, phone or reference" value="${esc(S.bSearch)}" data-change="bsearch" aria-label="Search bookings"></div></header>
-  <div class="tblwrap">${list.length ? `<table class="btable"><thead><tr><th>Guest</th>${UNITS.length > 1 ? "<th>Unit</th>" : ""}<th>Dates</th><th>Paid by</th><th>Total</th><th>Status</th></tr></thead><tbody>${list.map(bRow).join("")}</tbody></table>` : `<div class="empty">${ic("search")}<b>No bookings match.</b><br>Try a different filter or search.</div>`}</div></section>`;
-}
-function bDrawer(b) {
-  const u = UNITS.find(x => x.id === b.unit), [lab, cls] = STATUS[b.status];
-  return `<div class="mh"><div><span class="badge ${cls}">${lab}</span><h2 style="font-family:var(--display);font-weight:400;font-size:1.35rem;margin-top:8px">${esc(b.guest)}</h2></div><button class="x" data-act="closeDrawer" aria-label="Close">${ic("x")}</button></div>
-  <div class="db"><dl class="kv"><dt>Reference</dt><dd>${b.ref}</dd><dt>Unit</dt><dd>${esc(u.name)}</dd><dt>Dates</dt><dd>${fmtD(b.in, { dow: true })} to ${fmtD(b.out, { dow: true })} (${plural(diff(b.in, b.out), "night")})</dd><dt>Guests</dt><dd>${b.guests}</dd><dt>Mobile</dt><dd>${esc(b.phone)}</dd><dt>Email</dt><dd style="word-break:break-all">${esc(b.email)}</dd><dt>Booked via</dt><dd>${b.source}</dd><dt>Payment</dt><dd>${{ gcash: "GCash", bank: "Bank transfer", cash: "Cash on arrival" }[b.method]}${b.receipt ? " · receipt uploaded" : ""}</dd></dl>
-  ${b.notes ? `<div class="paybox" style="grid-template-columns:auto 1fr;padding:16px;margin-top:20px">${ic("chat")}<span class="small">“${esc(b.notes)}”</span></div>` : ""}
-  ${b.status === "pending" ? `<div class="calmsg err" style="background:var(--warn-soft);color:var(--warn)">${ic("clock", "sm")}<span>Dates held for <b class="countdown" data-hold="${b.ref}">${holdLeft(b)}</b>. They'll be released automatically if not confirmed.</span></div>` : ""}
-  <h3 style="font-weight:600;margin:24px 0 4px">Price</h3>${linesHTML(quote(b.unit, b.in, b.out), u)}
-  ${b.receipt ? `<button class="btn ghost sm" style="margin-top:20px" data-act="receipt" data-ref="${b.ref}">${ic("receipt", "sm")}View receipt</button>` : ""}</div>
-  <div class="df">${b.status === "pending" ? `<button class="btn sm" data-act="confirm" data-ref="${b.ref}">${ic("check", "sm")}Confirm payment</button><button class="btn danger sm" data-act="decline" data-ref="${b.ref}">Decline and release dates</button>`
-    : b.status === "confirmed" ? `<button class="btn sm" data-act="checkin" data-ref="${b.ref}">${ic("key", "sm")}Mark checked in</button><button class="btn danger sm" data-act="decline" data-ref="${b.ref}">Cancel booking</button>`
-    : b.status === "checkedin" ? `<button class="btn sm" data-act="checkout" data-ref="${b.ref}">Mark checked out</button>` : ""}
-    <button class="btn ghost sm" data-act="demo" data-w="Opening chat with ${esc(b.guest.split(" ")[0])}">${ic("chat", "sm")}Message guest</button></div>`;
-}
-function receiptModal(b) {
-  const r = rng(b.ref.length * 97 + b.total);
-  return `<div class="mh"><h2>Payment receipt</h2><button class="x" data-act="close" aria-label="Close">${ic("x")}</button></div>
-  <div class="mb" style="background:var(--sand)"><div class="rcpt"><div style="text-align:center;font-weight:700;color:#1e5bb8">${b.method === "gcash" ? "E-wallet transfer" : "Bank transfer"}</div><div class="tiny" style="text-align:center;color:#666">Sample receipt uploaded by guest</div>
-    <div class="amt">${peso(b.total)}.00</div><div class="tiny" style="text-align:center;color:#2b8a3e;font-weight:700;margin-bottom:12px">Sent successfully</div>
-    <div class="r"><span>To</span><b>Keziah L.</b></div><div class="r"><span>From</span><b>${esc(b.guest)}</b></div><div class="r"><span>Ref no.</span><b>${Math.floor(1e12 + r() * 9e12)}</b></div><div class="r"><span>Date</span><b>${new Date(b.created).toLocaleDateString("en-PH", { month: "short", day: "numeric", year: "numeric" })}</b></div></div>
-    <div class="calmsg ok" style="max-width:420px;margin:18px auto 0">${ic("check", "sm")}<span>Amount matches the booking total of ${peso(b.total)}.</span></div></div>
-  <div class="mf">${b.status === "pending" ? `<button class="btn ghost sm" data-act="askNew" data-ref="${b.ref}">Ask for a clearer receipt</button><button class="btn sm" data-act="confirm" data-ref="${b.ref}">${ic("check", "sm")}Confirm payment</button>` : `<button class="btn sm" data-act="close">Close</button>`}</div>`;
-}
-function acalPage() {
-  const u = UNITS.find(x => x.id === S.aUnit), m = S.aMonth || monthStart(TODAY), d0 = parse(m), y = d0.getFullYear(), mo = d0.getMonth();
-  const first = new Date(y, mo, 1).getDay(), days = new Date(y, mo + 1, 0).getDate(), sel = S.aSel;
-  let cells = DOW.map(d => `<div class="h">${d}</div>`).join("");
-  for (let i = 0; i < first; i++) cells += `<div class="acell out" aria-hidden="true"></div>`;
-  for (let d = 1; d <= days; d++) {
-    const s = iso(new Date(y, mo, d)), b = bookingAt(u.id, s), k = blockAt(u.id, s), np = nightPrice(u.id, s);
-    const inSel = sel && sel.a && s >= sel.a && s <= (sel.b || sel.a);
-    let pill = "";
-    if (b) pill = `<span class="pill ${b.status === "pending" ? "p" : b.status === "checkedin" ? "i" : "c"}">${b.in === s || d === 1 ? esc(b.guest.split(" ")[0]) + (b.status === "pending" ? " (hold)" : "") : "&nbsp;"}</span>`;
-    else if (k) pill = `<span class="pill k">${k.in === s || d === 1 ? "Blocked" : "&nbsp;"}</span>`;
-    cells += `<button class="acell ${s < TODAY ? "past" : ""} ${inSel ? "sel" : ""}" data-act="aDay" data-day="${s}" aria-label="${fmtD(s, { dow: true })}, ${b ? "booked by " + b.guest : k ? "blocked" : "free, " + peso(np.p)}"><span class="dn"><span>${d}</span>${s === TODAY ? '<span class="badge river" style="padding:1px 6px;font-size:.62rem">Today</span>' : ""}</span>${pill}${!b && !k ? `<span class="pr ${np.kind === "special" || np.kind === "holiday" ? "sp" : ""}">${peso(np.p)}</span>` : ""}</button>`;
-  }
-  return `<div class="atop"><h1>Calendar</h1>${UNITS.length < 2 ? "" : `<div class="chips" role="group" aria-label="Unit">${UNITS.map(x => `<button class="chip" data-act="aUnit" data-u="${x.id}" aria-pressed="${x.id === S.aUnit}">${esc(x.short)}</button>`).join("")}</div>`}</div>
-  <section class="panel"><header><h2>${esc(u.name)}, ${MONTHS[mo]} ${y}</h2><div class="calnav"><button data-act="aMonth" data-n="-1" aria-label="Previous month">${ic("left")}</button><button data-act="aMonth" data-n="1" aria-label="Next month">${ic("right")}</button></div></header>
-  <p class="small muted" style="margin-top:-6px">Tap a booking to open it. Tap two free days to block them or set a special price.</p>
-  <div class="tblwrap"><div class="acal" style="min-width:560px">${cells}</div></div>
-  <div class="legend"><span><i style="background:var(--sage);border-color:var(--sage)"></i>Confirmed</span><span><i style="background:var(--warn-soft);border:1px dashed var(--warn)"></i>On hold, unpaid</span><span><i style="background:#6B5A87;border-color:#6B5A87"></i>Checked in</span><span><i class="x"></i>Blocked by you</span><span style="color:var(--warn);font-weight:600">Orange price: holiday or special rate</span></div></section>
-  ${sel && sel.a ? `<div class="seltray" role="region" aria-label="Selected dates"><span><b>${sel.b ? fmtD(sel.a) + " – " + fmtD(sel.b) : fmtD(sel.a)}</b>, ${plural(sel.b ? diff(sel.a, sel.b) + 1 : 1, "night")} selected</span><span style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn ghost sm" data-act="aClear">Clear</button><button class="btn ghost sm" data-act="aPrice">${ic("tag", "sm")}Set special price</button><button class="btn light sm" data-act="aBlock">${ic("ban", "sm")}Block these dates</button></span></div>` : ""}`;
-}
-function ratesPage() {
-  const u = UNITS.find(x => x.id === S.aUnit), sp = Object.entries(SPECIAL).filter(([k]) => k.startsWith(u.id + "|")).sort();
-  const sample = (() => { let d = TODAY; while (parse(d).getDay() !== 5) d = addDays(d, 1); return [d, addDays(d, 3)]; })(), sq = quote(u.id, sample[0], sample[1]);
-  const pf = (k, lab, help) => `<div class="field"><label for="r-${k}">${lab}</label><div class="prefix"><span>₱</span><input id="r-${k}" type="number" inputmode="numeric" min="0" step="50" value="${u[k]}" data-rate="${k}"></div>${help ? `<span class="help">${help}</span>` : ""}</div>`;
-  return `<div class="atop"><h1>Prices</h1>${UNITS.length < 2 ? "" : `<div class="chips" role="group" aria-label="Unit">${UNITS.map(x => `<button class="chip" data-act="aUnit" data-u="${x.id}" aria-pressed="${x.id === S.aUnit}">${esc(x.short)}</button>`).join("")}</div>`}</div>
-  <div class="agrid"><div><section class="panel"><header><h2>${esc(u.name)}: nightly rates</h2></header><div class="fgrid">
-    ${pf("rate", "Sunday to Thursday", "Your regular price")}${pf("weekend", "Friday and Saturday", "")}${pf("holiday", "Christmas and New Year", "Dec 24, 25, 31 and Jan 1")}${pf("cleaning", "Cleaning fee", "Charged once per stay")}${pf("deposit", "Security deposit", "Cash, refundable")}
-    <div class="field"><label for="r-max">Most guests</label><input id="r-max" type="number" value="${u.guests}" min="1" max="10" data-rate="guests"><span class="help">Airbnb listing allows up to 3</span></div></div></section>
-  <section class="panel"><header><h2>Long-stay discounts</h2></header>
-    <div class="setrow"><div><b>Weekly</b><div class="small muted">7 nights or more</div></div><span class="badge">10% off</span></div><div class="setrow"><div><b>Monthly</b><div class="small muted">28 nights or more</div></div><span class="badge">25% off</span></div></section>
-  <section class="panel"><header><h2>Special prices</h2><a class="link small" href="#owner-calendar">Add from calendar</a></header>
-    ${sp.length ? sp.map(([k, v]) => `<div class="setrow"><span>${fmtD(k.split("|")[1], { dow: true, year: true })}</span><span style="display:flex;gap:12px;align-items:center"><b class="num">${peso(v)}</b><button class="x" data-act="rmSpecial" data-k="${k}" aria-label="Remove special price">${ic("x", "sm")}</button></span></div>`).join("") : `<div class="empty" style="padding:20px">${ic("tag")}No special prices yet. Use them for Kagay-an Festival week, long weekends or big events in CDO.</div>`}</section></div>
-  <div><section class="panel" style="position:sticky;top:20px"><header><h2>What guests will see</h2></header>
-    <p class="small muted" style="margin-top:-6px">A Friday to Monday stay, ${fmtRange(sample[0], sample[1])}. Updates as you type.</p><div id="ratePrev" data-a="${sample[0]}" data-b="${sample[1]}">${linesHTML(sq, u)}</div>
-    <div class="navrow" style="margin-top:22px"><button class="btn ghost sm" data-act="aUnit" data-u="${u.id}">Undo changes</button><button class="btn sm" data-act="saveRates">${ic("check", "sm")}Save prices</button></div></section></div></div>`;
-}
-function emailsPage() {
-  const b = BOOKINGS.find(x => x.ref === S.lastRef) || BOOKINGS.find(x => x.status === "pending");
-  return `<div class="atop"><div><h1>Guest messages</h1><p class="muted small" style="margin:6px 0 0">Sent automatically. You can change the wording any time.</p></div></div>
-  <section class="panel"><header><h2>Automatic messages</h2></header>
-    ${[["Booking request received", "To the guest, right after they book", 1], ["New request alert", "To you, by email and text", 1], ["Booking confirmed", "To the guest, when you confirm payment", 1], ["Check-in reminder", "To the guest, the day before arrival", 1], ["Thank-you and review request", "To the guest, after check-out", 0]].map(([t, d, on]) => `<div class="setrow"><div><b>${t}</b><div class="small muted">${d}</div></div><button class="toggle" role="switch" aria-checked="${!!on}" aria-label="${t}" data-act="toggle"></button></div>`).join("")}</section>
-  <div class="split" style="margin-top:22px;align-items:start;gap:22px"><div>${emailHTML("received", b)}</div><div>${emailHTML("confirmed", b)}</div></div>
-  <div style="margin-top:22px">${emailHTML("owner", b)}</div>`;
-}
-function reportPage() {
-  const m0 = monthStart(TODAY), dim = diff(m0, addMonths(m0, 1)), name = MONTHS[parse(m0).getMonth()] + " " + parse(m0).getFullYear();
-  const per = UNITS.map(u => { let n = 0, r = 0; for (let i = 0; i < dim; i++) { const d = addDays(m0, i), b = bookingAt(u.id, d); if (b && b.status !== "pending") { n++; r += nightPrice(u.id, d).p; } } return { u, n, r, occ: Math.round(n / dim * 100) }; });
-  const tn = per.reduce((a, x) => a + x.n, 0), tr = per.reduce((a, x) => a + x.r, 0), stays = BOOKINGS.filter(b => b.in.startsWith(m0.slice(0, 7)) && b.status !== "cancelled");
-  const meth = ["gcash", "bank", "cash"].map(k => [k, stays.filter(b => b.method === k).length]), mx = Math.max(1, ...meth.map(x => x[1]));
-  return `<div class="atop"><div><p class="muted small" style="margin:0">Sent to you on the 1st of every month</p><h1>Monthly report, ${name}</h1></div><button class="btn sm ghost" data-act="demo" data-w="Downloading the report as PDF">${ic("download", "sm")}Download PDF</button></div>
-  <div class="stats"><div><span>Nights booked</span><b>${tn}</b><em>of ${dim * UNITS.length} available</em></div><div><span>Occupancy</span><b>${Math.round(tn / (dim * UNITS.length) * 100)}%</b><em>all units</em></div><div><span>Room revenue</span><b class="num" style="font-size:1.9rem">${peso(tr)}</b><em>before cleaning fees</em></div><div><span>Average per night</span><b class="num" style="font-size:1.9rem">${peso(tn ? tr / tn : 0)}</b><em>across units</em></div></div>
-  <div class="agrid">${UNITS.length > 1 ? `<section class="panel"><header><h2>By unit</h2></header><div class="tblwrap"><table class="rtable"><thead><tr><th>Unit</th><th>Nights</th><th>Occupancy</th><th>Revenue</th></tr></thead><tbody>${per.map(x => `<tr><td>${esc(x.u.name)}</td><td class="num">${x.n}</td><td class="num">${x.occ}%</td><td class="num">${peso(x.r)}</td></tr>`).join("")}<tr><td><b>Total</b></td><td class="num"><b>${tn}</b></td><td></td><td class="num"><b>${peso(tr)}</b></td></tr></tbody></table></div>
-    <h3 style="font-weight:600;margin:28px 0 14px">Revenue by unit</h3><div class="bars">${per.map(x => `<div class="r"><span>${esc(x.u.short)}</span><span class="t"><i style="width:${tr ? Math.round(x.r / tr * 100) : 0}%"></i></span><b class="num">${tr ? Math.round(x.r / tr * 100) : 0}%</b></div>`).join("")}</div></section>
-  ` : `<section class="panel"><header><h2>This month at a glance</h2></header><div class="bars"><div class="r"><span>Booked nights</span><span class="t"><i style="width:${Math.round(tn / dim * 100)}%"></i></span><b class="num">${tn}</b></div><div class="r"><span>Open nights</span><span class="t"><i style="width:${100 - Math.round(tn / dim * 100)}%;background:var(--line-2)"></i></span><b class="num">${dim - tn}</b></div></div><p class="small muted" style="margin:18px 0 0">Room revenue ${peso(tr)} from ${tn} booked nights.</p></section>`}<div><section class="panel"><header><h2>How guests paid</h2></header><div class="bars">${meth.map(([k, n]) => `<div class="r"><span>${{ gcash: "GCash", bank: "Bank transfer", cash: "Cash" }[k]}</span><span class="t"><i style="width:${Math.round(n / mx * 100)}%;background:var(--sage)"></i></span><b class="num">${n}</b></div>`).join("")}</div></section>
-  <section class="panel"><header><h2>Notes for next month</h2></header><ul class="ticks" style="margin:0;gap:12px">${[
-    "December holiday nights are already partly booked. Consider a special price for Dec 30.",
-    "Most requests came in on weekday evenings, between 7 and 10 PM.",
-    "Guests keep mentioning the honesty store and quick replies. Worth keeping.",
-    "One request expired without payment. Its dates were released automatically.",
-    "Website updates this month: sharper photos for Home 2 and updated house rules."
-  ].map(t => `<li style="color:var(--ink-2)">${ic("check")}<span class="small">${t}</span></li>`).join("")}</ul><p class="tiny muted" style="margin:14px 0 0">Example notes. These get written fresh each month.</p></section></div></div>`;
-}
 /* ---------- router ---------- */
+const HOME_IDS = ["home", "location", "goodtoknow", "reviews", "home2-tour", "homes", "host", "plan", "payment"];
 function route() { return (location.hash || "#home").slice(1) || "home"; }
 function render(keepScroll) {
   let r = route(); const app = $("#app");
   if (r === "avail") { r = "unit-" + UNITS[0].id; pendingAnchor = "avail"; }
-  closeDrawer();
-  if (r.startsWith("owner")) {
-    S.mode = "owner";
-    app.innerHTML = ribbon() + (S.authed ? adminShell(r, ({ owner: overview, "owner-bookings": bookingsPage, "owner-calendar": acalPage, "owner-rates": ratesPage, "owner-emails": emailsPage, "owner-report": reportPage }[r] || overview)()) : loginPage());
-    document.title = "Owner page, Home by Kish (demo)";
-  } else {
-    S.mode = "guest";
-    let body;
-    if (["home", "location", "goodtoknow", "reviews", "home2-tour", "homes", "host"].includes(r)) body = home();
-    else if (r === "units" || r === "homes-list") { location.replace("#unit-" + UNITS[0].id); return; }
-    else if (r.startsWith("unit-")) body = unitPage(r.slice(5));
-    else if (r === "book") body = bookPage();
-    else if (r === "done") body = donePage();
-    else if (r === "track") body = trackPage();
-    else if (r === "contact") body = contactPage();
-    else body = notFound();
-    app.innerHTML = `<div class="progress-bar" id="pbar"></div>` + ribbon() + header(r) + `<main id="main">${body}</main>` + footer() + (r === "home" || r.startsWith("unit-") || ["location", "goodtoknow", "reviews", "home2-tour", "homes", "host"].includes(r) ? mobileBar() : "");
-    document.title = (r.startsWith("unit-") ? ((unitById(r.slice(5)) || {}).name || "Home") + ", " : r === "book" ? "Book, " : "") + "Home by Kish, Cagayan de Oro";
-  }
+  let body;
+  if (HOME_IDS.includes(r)) body = home();
+  else if (r === "units" || r === "book" || r === "track" || r.startsWith("owner")) { location.replace(r === "units" ? "#unit-" + UNITS[0].id : "#plan"); return; }
+  else if (r.startsWith("unit-")) body = unitPage(r.slice(5));
+  else if (r === "contact") body = contactPage();
+  else body = notFound();
+  app.innerHTML = `<div class="progress-bar" id="pbar"></div>` + ribbon() + header(r) + `<main id="main">${body}</main>` + footer() + (r === "contact" ? "" : mobileBar());
+  document.title = (r.startsWith("unit-") ? ((unitById(r.slice(5)) || {}).name || "Home") + ", " : r === "contact" ? "Contact, " : "") + "Home by Kish, Cagayan de Oro";
   setupReveal(keepScroll);
   requestAnimationFrame(onScroll);
   if (pendingAnchor) { const id = pendingAnchor; pendingAnchor = null; setTimeout(() => { const el = document.getElementById(id); el && el.scrollIntoView({ behavior: "smooth", block: "start" }); }, 250); return; }
-  if (["location", "goodtoknow", "reviews", "home2-tour", "homes", "host"].includes(r)) { requestAnimationFrame(() => { const el = document.getElementById(r); el && el.scrollIntoView(); }); return; }
+  if (HOME_IDS.includes(r) && r !== "home") { requestAnimationFrame(() => { const el = document.getElementById(r); el && el.scrollIntoView(); }); return; }
   if (!keepScroll) window.scrollTo({ top: 0, behavior: "instant" });
 }
+function rerender() { const y = window.scrollY; render(true); window.scrollTo({ top: y, behavior: "instant" }); }
+function go() { const app = $("#app"); app.classList.add("leaving"); setTimeout(() => { render(); app.classList.remove("leaving"); }, 180); }
+
+/* ---------- motion ---------- */
 let revObs = null;
 const reduced = () => matchMedia("(prefers-reduced-motion: reduce)").matches;
 function countUp(el) {
@@ -1896,11 +1577,18 @@ function setupReveal(instant) {
   revObs = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add("in"); revObs.unobserve(e.target); } }), { rootMargin: "0px 0px -8% 0px", threshold: .08 });
   els.forEach(e => revObs.observe(e));
 }
-function go() { const app = $("#app"); app.classList.add("leaving"); setTimeout(() => { render(); app.classList.remove("leaving"); }, 180); }
-function rerender() { const y = window.scrollY; render(true); window.scrollTo({ top: y, behavior: "instant" }); }
-function refreshCal(ctx) {
-  if (ctx === "modal") { setModal(datesModal()); return; }
-  rerender();
+function setSlide(i) { const s = $$(".slide"); if (!s.length) return; S.slide = (i + s.length) % s.length; s.forEach((x, k) => x.classList.toggle("on", k === S.slide)); $$(".sdots button").forEach((b, k) => b.setAttribute("aria-current", k === S.slide)); }
+
+/* ---------- plan your stay ---------- */
+function refreshPlan() {
+  const t = $("#p-text"), e = $("#p-est"), o = $("#p-out");
+  if (t) t.textContent = planMessage();
+  if (e) e.innerHTML = estHTML(planEstimate());
+  if (o) o.min = S.plan.in || TODAY;
+}
+async function copyText(txt) {
+  try { await navigator.clipboard.writeText(txt); return true; }
+  catch (err) { const ta = document.createElement("textarea"); ta.value = txt; ta.style.position = "fixed"; ta.style.opacity = "0"; document.body.appendChild(ta); ta.select(); let ok = false; try { ok = document.execCommand("copy"); } catch (e2) {} ta.remove(); return ok; }
 }
 
 /* ---------- actions ---------- */
@@ -1908,154 +1596,56 @@ const A = {
   pkg: () => openPkg(),
   pkgGo: el => {
     const t = el.dataset.to; closeModal();
-    if (t.startsWith("owner")) S.authed = true;
     if (route() === t || (t === "home" && route() === "home")) { const id = t === "home" ? null : t; if (id && document.getElementById(id)) document.getElementById(id).scrollIntoView({ behavior: "smooth" }); else window.scrollTo({ top: 0, behavior: "smooth" }); return; }
     location.hash = "#" + t;
   },
-  close: closeModal, closeDrawer,
+  close: closeModal,
   demo: el => { $("#chatpop") && $("#chatpop").classList.remove("open"); demoNote(el.dataset.w || "Done"); },
   menu: () => { const m = $("#mnav"), o = !m.classList.contains("open"); m.classList.toggle("open", o); $$('[data-act="menu"]').forEach(b => b.setAttribute("aria-expanded", o)); document.body.style.overflow = o ? "hidden" : ""; },
-  chat: () => { const p = $("#chatpop"), o = !p.classList.contains("open"); p.classList.toggle("open", o); $('.fab .chat').setAttribute("aria-expanded", o); },
+  chat: () => { const p = $("#chatpop"), o = !p.classList.contains("open"); p.classList.toggle("open", o); $(".fab .chat").setAttribute("aria-expanded", o); },
   top: () => window.scrollTo({ top: 0, behavior: "smooth" }),
-  mode: el => { const m = el.dataset.m; closeModal(); location.hash = m === "owner" ? "#owner" : "#home"; },
-  openDates: el => { if (el.dataset.u) S.stay.unit = el.dataset.u; S.calMonth = monthStart(S.stay.in || TODAY); calMsg = null; openModal(datesModal(), { label: "Choose dates" }); S.datesOpen = true; },
-  modalUnit: el => { S.stay.unit = el.dataset.u; const u = unitById(S.stay.unit); S.stay.guests = Math.min(S.stay.guests, u.guests); if (S.stay.in && S.stay.out && rangeOK(u.id, S.stay.in, S.stay.out)) { S.stay.in = S.stay.out = null; calMsg = { t: "err", m: "Your dates aren't free in this unit, so we cleared them. Pick new ones below." }; } else calMsg = null; setModal(datesModal()); },
-  clearDates: () => { S.stay.in = S.stay.out = null; calMsg = null; setModal(datesModal()); },
-  pickDay: el => { pickDay(el.dataset.day); refreshCal(el.dataset.ctx); },
-  calNav: el => { S.calMonth = addMonths(S.calMonth || monthStart(S.stay.in || TODAY), +el.dataset.n); S.calAnim = true; refreshCal(el.dataset.ctx); S.calAnim = false; },
-  allPhotos: () => openModal(allPhotosHTML(), { label: "All photos" }),
-  jump: el => { const t = document.getElementById(el.dataset.t); t && t.scrollIntoView({ behavior: "smooth", block: "start" }); },
-  guests: el => { const u = unitById(S.stay.unit); S.stay.guests = Math.max(1, Math.min(u.guests, S.stay.guests + +el.dataset.n)); rerender(); },
-  goBook: () => { S.step = 1; calMsg = null; location.hash = "#book"; },
-  slide: el => { setSlide(+el.dataset.i); },
+  theme: () => { const d = document.documentElement, dark = d.dataset.theme !== "dark"; d.dataset.theme = dark ? "dark" : "light"; rerender(); toast(dark ? "Dark mode on" : "Light mode on", "Colours can be changed in one place later."); },
+  slide: el => setSlide(+el.dataset.i),
   tour: el => { S.tour = el.dataset.t; S.tourI = 0; const box = $("#home2-tour"); box.innerHTML = tourHTML(); box.querySelectorAll(".rv").forEach(e => e.classList.add("in")); },
   tourPic: el => { S.tourI = +el.dataset.i; const box = $("#home2-tour"); box.innerHTML = tourHTML(); box.querySelectorAll(".rv").forEach(e => e.classList.add("in")); },
-  moreRev: el => { const c = !!el.dataset.c; if (c) S.revAllU = true; else S.revAll = true; const box = $(c ? "#ureviews" : "#reviews"); box.innerHTML = (c ? "<h2>Guest reviews</h2>" : "") + reviewsHTML(c); box.querySelectorAll(".rv").forEach(e => e.classList.add("in")); box.querySelectorAll(".rev").forEach((e, i) => { if (i >= (c ? 3 : 4)) { e.classList.add("fadeswap"); } }); },
+  moreRev: el => { const c = !!el.dataset.c; if (c) S.revAllU = true; else S.revAll = true; const box = $(c ? "#ureviews" : "#reviews"); box.innerHTML = (c ? "<h2>Guest reviews</h2>" : "") + reviewsHTML(c); box.querySelectorAll(".rv").forEach(e => e.classList.add("in")); box.querySelectorAll(".rev").forEach((e, i) => { if (i >= (c ? 3 : 4)) e.classList.add("fadeswap"); }); },
   readMore: el => el.closest(".rev").classList.add("open"),
-  theme: () => { const d = document.documentElement, dark = d.dataset.theme !== "dark"; d.dataset.theme = dark ? "dark" : "light"; rerender(); toast(dark ? "Dark mode on" : "Light mode on", "Colours can be changed in one place later."); },
   strip: el => { const s = $("#strip"); s.scrollBy({ left: +el.dataset.n * s.clientWidth * .8, behavior: "smooth" }); },
-  lightbox: el => { LB.list = el.dataset.set === "tour" ? TOUR.find(t => t.id === S.tour).photos : ALLPHOTOS; LB.i = +el.dataset.i || 0; const was = $("#scrim").classList.contains("open"); if (was) closeModal(); setTimeout(() => { openModal(lightbox(), { label: "Photo viewer", cls: "lbm" }); $("#scrim .modal").style.background = "transparent"; $("#scrim .modal").style.boxShadow = "none"; }, was ? 260 : 0); },
+  lightbox: el => { LB.list = el.dataset.set === "tour" ? TOUR.find(t => t.id === S.tour).photos : ALLPHOTOS; LB.i = +el.dataset.i || 0; const was = $("#scrim").classList.contains("open"); if (was) closeModal(); setTimeout(() => { openModal(lightbox(), { label: "Photo viewer" }); $("#scrim .modal").style.background = "transparent"; $("#scrim .modal").style.boxShadow = "none"; }, was ? 260 : 0); },
   lbNav: el => { LB.i = (LB.i + +el.dataset.n + LB.list.length) % LB.list.length; setModal(lightbox()); },
   share: () => demoNote("Link copied"),
   scrollTo: el => { const t = document.getElementById(el.dataset.t); t && t.scrollIntoView({ behavior: "smooth" }); },
-  flowUnit: el => { S.stay.unit = el.dataset.u; const u = unitById(S.stay.unit); S.stay.guests = Math.min(S.stay.guests, u.guests); if (S.stay.in && S.stay.out && rangeOK(u.id, S.stay.in, S.stay.out)) { S.stay.in = S.stay.out = null; calMsg = { t: "err", m: "Those dates aren't free in this unit, so we cleared them. Pick new ones." }; } else calMsg = null; rerender(); },
-  step: el => {
-    const n = +el.dataset.n;
-    if (n > S.step && S.step === 2 && !validGuest()) return;
-    if (n > S.step && S.step === 3) { if (!S.pay) { $("#payerr").innerHTML = `<div class="calmsg err">${ic("alert", "sm")}<span>Choose how you'd like to pay.</span></div>`; return; } }
-    S.step = n; calMsg = null; render(); $("#stepbody") && $(".progress").scrollIntoView({ block: "start" });
+  allPhotos: () => openModal(allPhotosHTML(), { label: "All photos" }),
+  jump: el => { const t = document.getElementById(el.dataset.t); t && t.scrollIntoView({ behavior: "smooth", block: "start" }); },
+  plan: () => {
+    $("#mnav") && $("#mnav").classList.remove("open"); document.body.style.overflow = "";
+    const inline = $(".plan:not(.inmodal)") || $(".plan");
+    if (inline) { (document.getElementById("plan") || inline).scrollIntoView({ behavior: "smooth", block: "start" }); return; }
+    openModal(`<div class="mh"><h2>Plan your stay</h2><button class="x" data-act="close" aria-label="Close">${ic("x")}</button></div><div class="mb">${planHTML(true)}</div>`, { label: "Plan your stay" });
   },
-  pay: el => { S.pay = el.dataset.p; rerender(); },
-  rmFile: () => { S.file = null; rerender(); },
-  submit: () => {
-    if (!$("#agree").checked) { $("#agreeerr").innerHTML = `<div class="calmsg err">${ic("alert", "sm")}<span>Tick the box to confirm you've read the house rules.</span></div>`; return; }
-    const st = S.stay, clash = rangeOK(st.unit, st.in, st.out);
-    if (clash) { toast("Those dates were just taken", "Someone else booked " + fmtD(clash) + ". Please pick new dates.", "alert"); S.step = 1; render(); return; }
-    const btn = $("#sendbtn"); btn.disabled = true; btn.innerHTML = `<span class="skel" style="width:120px;height:12px;display:inline-block"></span>`;
-    setTimeout(() => {
-      const q = quote(st.unit, st.in, st.out), now = Date.now();
-      const b = { ref: mkRef(), unit: st.unit, in: st.in, out: st.out, guest: (S.guest.first + " " + S.guest.last).trim(), phone: S.guest.phone, email: S.guest.email, guests: st.guests, status: "pending", method: S.pay, receipt: !!S.file && S.pay !== "cash", total: q.total, created: now, holdUntil: now + 24 * 36e5, source: "Website", notes: S.guest.notes };
-      BOOKINGS.push(b); S.lastRef = b.ref; location.hash = "#done";
-    }, 1100);
-  },
-  emailPrev: el => { const b = BOOKINGS.find(x => x.ref === el.dataset.ref); openModal(`<div class="mh"><h2>Email preview</h2><button class="x" data-act="close" aria-label="Close">${ic("x")}</button></div><div class="mb">${emailHTML("received", b)}</div>`, { label: "Email preview" }); },
-  track: () => {
-    const ref = $("#tref").value.trim().toUpperCase(), last = $("#tlast").value.trim(), out = $("#trackout");
-    $("#f-tref").classList.toggle("invalid", !ref); $("#f-tlast").classList.toggle("invalid", !last); if (!ref || !last) return;
-    out.innerHTML = `<div class="panel"><div class="skel" style="height:18px;width:40%"></div><div class="skel" style="height:12px;width:70%;margin-top:14px"></div><div class="skel" style="height:120px;margin-top:20px"></div></div>`;
-    setTimeout(() => { const b = BOOKINGS.find(x => x.ref === ref); out.innerHTML = b ? trackResult(b) : `<div class="calmsg err">${ic("alert", "sm")}<span>No booking found for ${esc(ref)}. Check the reference in your text or email, or message us and we'll look it up.</span></div>`; }, 700);
-  },
-  lateReceipt: el => { const b = BOOKINGS.find(x => x.ref === el.dataset.ref); b.receipt = true; rerender(); toast("Receipt uploaded", "We'll check it and confirm by text and email."); },
-  tryRef: el => { $("#tref").value = el.textContent; $("#tlast").value = "Demo"; A.track(); },
-  contactSend: () => { const ok = ["cname", "cphone", "cmsg"].map(k => { const v = $("#" + k).value.trim(); $("#f-" + k).classList.toggle("invalid", !v); return !!v; }).every(Boolean); if (ok) { toast("Message sent", "We'll reply by text within the hour. (Demo: nothing was sent.)"); ["cname", "cphone", "cmail", "cmsg"].forEach(k => $("#" + k).value = ""); } },
-  /* owner */
-  pin: el => { const k = el.dataset.k; if (k === "del") S.pin = S.pin.slice(0, -1); else if (S.pin.length < 4) S.pin += k; if (S.pin.length === 4) { S.authed = true; S.pin = ""; render(); toast("Signed in", "Welcome back, Keziah."); } else rerender(); },
-  logout: () => { S.authed = false; location.hash = "#home"; },
-  filter: el => { S.bFilter = el.dataset.f; if (route() !== "owner-bookings") location.hash = "#owner-bookings"; else rerender(); },
-  openB: el => { const b = BOOKINGS.find(x => x.ref === el.dataset.ref); closeModal(); openDrawer(bDrawer(b)); },
-  receipt: el => { const b = BOOKINGS.find(x => x.ref === el.dataset.ref); closeDrawer(); openModal(receiptModal(b), { label: "Receipt" }); },
-  confirm: el => { const b = BOOKINGS.find(x => x.ref === el.dataset.ref); b.status = "confirmed"; b.receipt = b.receipt || b.method !== "cash"; closeModal(); closeDrawer(); rerender(); toast("Booking confirmed", b.guest + " gets a confirmation text and email with check-in details."); },
-  decline: el => { const b = BOOKINGS.find(x => x.ref === el.dataset.ref); b.status = "cancelled"; closeDrawer(); rerender(); toast("Dates released", fmtRange(b.in, b.out) + " is open for booking again.", "refresh"); },
-  checkin: el => { const b = BOOKINGS.find(x => x.ref === el.dataset.ref); b.status = "checkedin"; closeDrawer(); rerender(); toast("Marked checked in", b.guest); },
-  checkout: el => { const b = BOOKINGS.find(x => x.ref === el.dataset.ref); b.status = "completed"; closeDrawer(); rerender(); toast("Marked checked out", "Cleaning reminder sent. (Demo)"); },
-  askNew: () => { closeModal(); demoNote("Asked the guest for a clearer receipt"); },
-  manual: () => openModal(`<div class="mh"><h2>Add a booking</h2><button class="x" data-act="close" aria-label="Close">${ic("x")}</button></div><div class="mb"><p class="muted small" style="margin-top:0">For guests who booked by phone, Messenger or walk-in. Their dates get blocked on the website right away.</p><div class="fgrid">${fld("mname", "Guest name", "", { full: 1 })}${fld("mphone", "Mobile", "", { type: "tel" })}<div class="field"><label for="munit">Unit</label><select id="munit">${UNITS.map(u => `<option value="${u.id}">${esc(u.name)}</option>`).join("")}</select></div>${fld("min", "Check-in", addDays(TODAY, 3), { type: "date" })}${fld("mout", "Check-out", addDays(TODAY, 5), { type: "date" })}</div></div><div class="mf"><button class="btn ghost sm" data-act="close">Cancel</button><button class="btn sm" data-act="saveManual">Add booking</button></div>`, { narrow: true, label: "Add a booking" }),
-  saveManual: () => {
-    const name = $("#mname").value.trim(), u = $("#munit").value, a = $("#min").value, b = $("#mout").value;
-    $("#f-mname").classList.toggle("invalid", !name); if (!name) return;
-    if (!a || !b || b <= a) { toast("Check the dates", "Check-out must be after check-in.", "alert"); return; }
-    const c = rangeOK(u, a, b); if (c) { toast("Those dates aren't free", fmtD(c) + " is already booked or blocked in this unit.", "alert"); return; }
-    const q = quote(u, a, b); BOOKINGS.push({ ref: mkRef(), unit: u, in: a, out: b, guest: name, phone: $("#mphone").value || "—", email: "—", guests: 2, status: "confirmed", method: "cash", receipt: false, total: q.total, created: Date.now(), holdUntil: Date.now(), source: "Messenger", notes: "" });
-    closeModal(); rerender(); toast("Booking added", name + ", " + fmtRange(a, b) + ". Those dates are now blocked online.");
-  },
-  aUnit: el => { S.aUnit = el.dataset.u; S.aSel = null; rerender(); },
-  aMonth: el => { S.aMonth = addMonths(S.aMonth || monthStart(TODAY), +el.dataset.n); S.aSel = null; rerender(); },
-  aDay: el => {
-    const d = el.dataset.day, b = bookingAt(S.aUnit, d), k = blockAt(S.aUnit, d);
-    if (b) { openDrawer(bDrawer(b)); return; }
-    if (k) { openModal(`<div class="mh"><h2>Blocked dates</h2><button class="x" data-act="close" aria-label="Close">${ic("x")}</button></div><div class="mb"><p><b>${fmtRange(k.in, addDays(k.out, -1))}</b></p><p class="muted">${esc(k.reason)}</p></div><div class="mf"><button class="btn ghost sm" data-act="close">Keep blocked</button><button class="btn sm" data-act="unblock" data-in="${k.in}">Open these dates</button></div>`, { narrow: true }); return; }
-    if (d < TODAY) return;
-    const s = S.aSel;
-    if (!s || s.b || d < s.a) S.aSel = { a: d, b: null };
-    else { for (let x = s.a; x <= d; x = addDays(x, 1)) if (bookingAt(S.aUnit, x) || blockAt(S.aUnit, x)) { toast("Can't select across a booking", fmtD(x) + " is already taken.", "alert"); return; } S.aSel.b = d; }
-    rerender();
-  },
-  aClear: () => { S.aSel = null; rerender(); },
-  aBlock: () => openModal(`<div class="mh"><h2>Block ${fmtD(S.aSel.a)}${S.aSel.b ? " – " + fmtD(S.aSel.b) : ""}</h2><button class="x" data-act="close" aria-label="Close">${ic("x")}</button></div><div class="mb"><p class="muted small" style="margin-top:0">Guests won't be able to book these nights. Only you see the reason.</p>${fld("breason", "Reason", "Owner using the unit", { sel: ["Owner using the unit", "Repairs or maintenance", "Deep cleaning", "Booked outside the website", "Other"] })}</div><div class="mf"><button class="btn ghost sm" data-act="close">Cancel</button><button class="btn sm" data-act="doBlock">${ic("ban", "sm")}Block dates</button></div>`, { narrow: true }),
-  doBlock: () => { BLOCKS.push({ unit: S.aUnit, in: S.aSel.a, out: addDays(S.aSel.b || S.aSel.a, 1), reason: $("#breason").value }); S.aSel = null; closeModal(); rerender(); toast("Dates blocked", "Guests can no longer book these nights."); },
-  unblock: el => { BLOCKS = BLOCKS.filter(k => !(k.unit === S.aUnit && k.in === el.dataset.in)); closeModal(); rerender(); toast("Dates opened", "Guests can book these nights again.", "refresh"); },
-  aPrice: () => { const u = UNITS.find(x => x.id === S.aUnit); openModal(`<div class="mh"><h2>Special price</h2><button class="x" data-act="close" aria-label="Close">${ic("x")}</button></div><div class="mb"><p class="muted small" style="margin-top:0">${fmtD(S.aSel.a)}${S.aSel.b ? " – " + fmtD(S.aSel.b) : ""} · ${esc(u.name)}. Good for festivals, long weekends and big events.</p><div class="field"><label for="sprice">Price per night</label><div class="prefix"><span>₱</span><input id="sprice" type="number" inputmode="numeric" value="${u.weekend + 500}" step="50"></div><span class="help">Your usual weekend price is ${peso(u.weekend)}.</span></div></div><div class="mf"><button class="btn ghost sm" data-act="close">Cancel</button><button class="btn sm" data-act="doPrice">Save price</button></div>`, { narrow: true }); },
-  doPrice: () => { const p = +$("#sprice").value; if (!p) return; for (let x = S.aSel.a; x <= (S.aSel.b || S.aSel.a); x = addDays(x, 1)) SPECIAL[S.aUnit + "|" + x] = p; S.aSel = null; closeModal(); rerender(); toast("Special price saved", peso(p) + " a night. Guests see it on the calendar now."); },
-  rmSpecial: el => { delete SPECIAL[el.dataset.k]; rerender(); },
-  saveRates: () => { $$("[data-rate]").forEach(i => { const v = +i.value; if (v >= 0) UNITS.find(x => x.id === S.aUnit)[i.dataset.rate] = v; }); rerender(); toast("Prices saved", "The website shows the new prices right away. (Demo: until you reload.)"); },
-  toggle: el => { const on = el.getAttribute("aria-checked") !== "true"; el.setAttribute("aria-checked", on); toast(on ? "Message turned on" : "Message turned off", el.getAttribute("aria-label")); }
+  pguests: el => { S.plan.guests = Math.max(1, Math.min(UNITS[0].guests, S.plan.guests + +el.dataset.n)); const box = el.closest(".plan"); const fresh = document.createElement("div"); fresh.innerHTML = planHTML(box.classList.contains("inmodal")); box.replaceWith(fresh.firstElementChild); },
+  copyPlan: async () => { const ok = await copyText(planMessage()); toast(ok ? "Message copied" : "Couldn't copy", ok ? "Paste it into Messenger, a text or an email to Kish." : "Select the message and copy it yourself.", ok ? "check" : "alert"); },
+  sendPlan: async el => { await copyText(planMessage()); toast(`Opening ${el.dataset.via}`, "Demo only. On the live site this opens " + el.dataset.via + " with your message ready to send. It's also copied for you.", "info"); }
 };
-function validGuest() {
-  const g = S.guest, chk = {
-    first: !!g.first.trim(), last: !!g.last.trim(),
-    phone: /^09\d{9}$/.test(g.phone.replace(/[\s-]/g, "")) || /^\+639\d{9}$/.test(g.phone.replace(/[\s-]/g, "")),
-    email: /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(g.email.trim())
-  };
-  let first = null;
-  Object.entries(chk).forEach(([k, ok]) => { $("#f-" + k).classList.toggle("invalid", !ok); if (!ok && !first) first = k; });
-  if (first) { $("#" + first).focus(); return false; }
-  return true;
-}
 
 /* ---------- events ---------- */
 document.addEventListener("click", e => {
   const el = e.target.closest("[data-act]");
-  if (el && A[el.dataset.act]) { if (el.tagName === "A" && el.dataset.act !== "mode" && el.dataset.act !== "filter") e.preventDefault(); A[el.dataset.act](el, e); return; }
-  if (e.target.id === "scrim") { if ($("#scrim").dataset.drawer) closeDrawer(); else closeModal(); }
+  if (el && A[el.dataset.act]) { if (el.tagName === "A") e.preventDefault(); A[el.dataset.act](el, e); return; }
+  if (e.target.id === "scrim") closeModal();
   const pop = $("#chatpop"); if (pop && pop.classList.contains("open") && !e.target.closest(".fab")) A.chat();
-  if (e.target.closest(".mnav a.item, .mnav .btn")) { $("#mnav").classList.remove("open"); document.body.style.overflow = ""; }
+  if (e.target.closest(".mnav a.item")) { $("#mnav").classList.remove("open"); document.body.style.overflow = ""; }
 });
 document.addEventListener("keydown", e => {
-  if (e.key === "Escape") { if ($("#drawer").classList.contains("open")) closeDrawer(); else if ($("#scrim").classList.contains("open")) closeModal(); else if ($("#mnav") && $("#mnav").classList.contains("open")) A.menu(); }
-  if ((e.key === "Enter" || e.key === " ") && e.target.matches("tr[data-act]")) { e.preventDefault(); A.openB(e.target); }
+  if (e.key === "Escape") { if ($("#scrim").classList.contains("open")) closeModal(); else if ($("#mnav") && $("#mnav").classList.contains("open")) A.menu(); else if ($("#chatpop") && $("#chatpop").classList.contains("open")) A.chat(); }
   if ($("#scrim .lb") && (e.key === "ArrowRight" || e.key === "ArrowLeft")) { LB.i = (LB.i + (e.key === "ArrowRight" ? 1 : -1) + LB.list.length) % LB.list.length; setModal(lightbox()); }
-  if (e.key === "Escape" && $("#chatpop") && $("#chatpop").classList.contains("open")) A.chat();
 });
 document.addEventListener("input", e => {
-  const k = e.target.dataset.in; if (k && k in S.guest) { S.guest[k] = e.target.value; e.target.closest(".field").classList.remove("invalid"); }
-  if (e.target.dataset.change === "bsearch") { S.bSearch = e.target.value; const pos = e.target.selectionStart; rerender(); const i = $('[data-change="bsearch"]'); i.focus(); i.setSelectionRange(pos, pos); }
-  if (e.target.dataset.rate && $("#ratePrev")) {
-    const u = unitById(S.aUnit), keep = { ...u };
-    $$("[data-rate]").forEach(i => { if (i.value !== "" && +i.value >= 0) u[i.dataset.rate] = +i.value; });
-    const pv = $("#ratePrev"); pv.innerHTML = linesHTML(quote(u.id, pv.dataset.a, pv.dataset.b), u);
-    Object.assign(u, keep);
-  }
+  const k = e.target.dataset.plan; if (!k) return;
+  S.plan[k] = e.target.value;
+  if (k === "in" && S.plan.out && S.plan.out <= S.plan.in) { S.plan.out = ""; const o = $("#p-out"); if (o) o.value = ""; }
+  refreshPlan();
 });
-document.addEventListener("change", e => {
-  const c = e.target.dataset.change;
-  if (c === "stayUnit") { S.stay.unit = e.target.value; const u = unitById(S.stay.unit); S.stay.guests = Math.min(S.stay.guests, u.guests); if (S.stay.in && S.stay.out && rangeOK(u.id, S.stay.in, S.stay.out)) { S.stay.in = S.stay.out = null; toast("Dates cleared", "Those dates aren't free in " + u.name + ".", "info"); } rerender(); }
-  if (c === "file") { const f = e.target.files[0]; if (!f) return; if (f.size > 10 * 1048576) { toast("That file is too big", "Upload a file under 10 MB.", "alert"); return; } S.file = { name: f.name, size: f.size > 1048576 ? (f.size / 1048576).toFixed(1) + " MB" : Math.ceil(f.size / 1024) + " KB", url: null };
-    const done = () => { rerender(); toast("Receipt attached", "Kish will check it when you send your request."); };
-    if (f.type.startsWith("image/")) { const fr = new FileReader(); fr.onload = () => { S.file.url = fr.result; done(); }; fr.readAsDataURL(f); } else done(); }
-});
-document.addEventListener("dragover", e => { const d = e.target.closest && e.target.closest("#drop"); if (d) { e.preventDefault(); d.classList.add("over"); } });
-document.addEventListener("dragleave", e => { const d = e.target.closest && e.target.closest("#drop"); if (d) d.classList.remove("over"); });
-document.addEventListener("drop", e => { const d = e.target.closest && e.target.closest("#drop"); if (d) { e.preventDefault(); const inp = $("#rcpt"); inp.files = e.dataTransfer.files; inp.dispatchEvent(new Event("change", { bubbles: true })); } });
 let ticking = false;
 function onScroll() {
   ticking = false;
@@ -2063,24 +1653,18 @@ function onScroll() {
   h && h.classList.toggle("scrolled", y > 10);
   t && t.classList.toggle("show", y > 700);
   if (pb) { const max = document.documentElement.scrollHeight - innerHeight; pb.style.transform = `scaleX(${max > 0 ? Math.min(1, y / max) : 0})`; }
-  if (mb) { const anchor = $(".bbar") || $("#bcard"); let show = y > 420; if (anchor && show) { const r = anchor.getBoundingClientRect(); if (r.top < innerHeight && r.bottom > 0) show = false; } mb.classList.toggle("show", show && !$("#scrim").classList.contains("open")); }
+  if (mb) { const anchor = $(".bbar") || $("#bcard"), plan = $("#plan"); let show = y > 420; if (anchor && show) { const r = anchor.getBoundingClientRect(); if (r.top < innerHeight && r.bottom > 0) show = false; } if (plan) { const r = plan.getBoundingClientRect(); if (r.top < innerHeight && r.bottom > 0) show = false; } mb.classList.toggle("show", show && !$("#scrim").classList.contains("open")); }
   if (!reduced() && innerWidth > 900) $$(".para").forEach(p => { const r = p.parentElement.getBoundingClientRect(); if (r.bottom < 0 || r.top > innerHeight) return; p.style.transform = `translateY(${((r.top + r.height / 2 - innerHeight / 2) * -0.08).toFixed(1)}px) scale(1.12)`; });
 }
 window.addEventListener("scroll", () => { if (!ticking) { ticking = true; requestAnimationFrame(onScroll); } }, { passive: true });
 window.addEventListener("resize", () => requestAnimationFrame(onScroll));
-setInterval(() => { const c = $("#cdotime"); if (c) c.textContent = cdoTime(); }, 20000);
-/* swipe in the photo viewer */
+window.addEventListener("hashchange", () => { if ($("#scrim").classList.contains("open")) closeModal(); const r = route(); if (HOME_IDS.includes(r) && $(".hero")) { const el = document.getElementById(r); if (el && r !== "home") { el.scrollIntoView({ behavior: "smooth" }); return; } if (r === "home") { window.scrollTo({ top: 0, behavior: "smooth" }); return; } } go(); });
 let sx = null;
 document.addEventListener("touchstart", e => { if (e.target.closest(".lb")) sx = e.touches[0].clientX; }, { passive: true });
 document.addEventListener("touchend", e => { if (sx == null || !$("#scrim .lb")) { sx = null; return; } const dx = e.changedTouches[0].clientX - sx; sx = null; if (Math.abs(dx) > 45) { LB.i = (LB.i + (dx < 0 ? 1 : -1) + LB.list.length) % LB.list.length; setModal(lightbox()); } }, { passive: true });
-window.addEventListener("hashchange", () => { if ($("#scrim").classList.contains("open")) { S.datesOpen = false; closeModal(); } calMsg = null; if (route() === "book" && S.step > 1 && !quote(S.stay.unit, S.stay.in, S.stay.out)) S.step = 1; const same = ["home", "location", "goodtoknow", "reviews", "home2-tour", "homes", "host"]; if (same.includes(route()) && $(".hero")) { const el = document.getElementById(route()); if (el) { el.scrollIntoView({ behavior: "smooth" }); return; } if (route() === "home") { window.scrollTo({ top: 0, behavior: "smooth" }); return; } } go(); });
-function setSlide(i) { const s = $$(".slide"); if (!s.length) return; S.slide = (i + s.length) % s.length; s.forEach((x, k) => x.classList.toggle("on", k === S.slide)); $$(".sdots button").forEach((b, k) => b.setAttribute("aria-current", k === S.slide)); }
-setInterval(() => { if ($(".hero") && !document.hidden && !matchMedia("(prefers-reduced-motion: reduce)").matches) setSlide(S.slide + 1); }, 6500);
-setInterval(() => $$("[data-hold]").forEach(el => { const b = BOOKINGS.find(x => x.ref === el.dataset.hold); if (b) el.textContent = holdLeft(b); }), 1000);
+setInterval(() => { if ($(".hero") && !document.hidden && !reduced()) setSlide(S.slide + 1); }, 6500);
+setInterval(() => { const c = $("#cdotime"); if (c) c.textContent = cdoTime(); }, 20000);
 
-
-seed();
-if (route().startsWith("owner")) S.authed = true;
 render();
 showPkgOnce();
 

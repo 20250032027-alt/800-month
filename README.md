@@ -2,8 +2,8 @@
 
 Two clickable demos for Home by Kish, Cagayan de Oro. Nothing entered is saved.
 
-- `/` (`index.html`): Version 1, the booking website (₱800 a month)
-- `/showcase/` (`showcase/index.html`): Version 2, the showcase website (₱1,500 a year)
+- `/` (`index.html`): Version 1, the showcase website (₱1,500 a year)
+- `/booking/` (`booking/index.html`): Version 2, the booking website (₱800 a month)
 - `img/`: photos used by both, watermarks already cropped
 - `vercel.json`: photo caching, and hidden from Google while these are demos
 
@@ -13,7 +13,7 @@ Each version opens with a "Two versions to choose from" box that links to the ot
 
     npx serve .
 
-Then open http://localhost:3000 and http://localhost:3000/showcase/
+Then open http://localhost:3000 and http://localhost:3000/booking/
 (Opening the HTML files directly won't show the photos, because they load from /img/.)
 
 ## Change the colours
