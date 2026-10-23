@@ -10,7 +10,7 @@
 <meta property="og:description" content="One-bedroom with a mountain-view balcony, pool and free parking. Rated 5.0 by guests. Message Kish to book.">
 <meta property="og:type" content="website">
 <meta property="og:image" content="/img/liv1.webp">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"VacationRental","name":"Home by Kish","description":"A cozy one-bedroom condo in Cagayan de Oro with a mountain-view balcony, shared pool and free parking. Up to 3 guests.","address":{"@type":"PostalAddress","addressLocality":"Cagayan de Oro","addressRegion":"Misamis Oriental","addressCountry":"PH"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"5.0","reviewCount":"15"},"checkinTime":"14:00","checkoutTime":"11:00","containsPlace":{"@type":"Accommodation","occupancy":{"@type":"QuantitativeValue","maxValue":3},"numberOfBedrooms":1}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"VacationRental","name":"Home by Kish","description":"A cozy one-bedroom condo in Cagayan de Oro with a mountain-view balcony, shared pool and free parking. Up to 3 guests.","address":{"@type":"PostalAddress","streetAddress":"One Oasis Condominium, Rosario Limketkai Ave","addressLocality":"Cagayan de Oro","postalCode":"9000","addressRegion":"Misamis Oriental","addressCountry":"PH"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"5.0","reviewCount":"15"},"checkinTime":"14:00","checkoutTime":"11:00","containsPlace":{"@type":"Accommodation","occupancy":{"@type":"QuantitativeValue","maxValue":3},"numberOfBedrooms":1}}</script>
 <link rel="preload" as="image" href="/img/liv1.webp" type="image/webp">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -701,6 +701,24 @@ h1,h2,h3,h4{margin:0}
 @media (max-width:760px){.stage .szoom{display:none}body.mbar-on .fab{opacity:0;pointer-events:none;transform:translateY(20px)}.fab{transition:opacity .3s,transform .3s}.mbar .mchat{width:44px;height:44px;border-radius:50%;border:1px solid var(--line-2);background:var(--surface);display:grid;place-items:center;color:var(--ink);flex:none}.mbar .mrow{display:flex;gap:8px;align-items:center}}
 
 @media (max-width:520px){.pchead .ptag{display:none}.pbtns .btn.ghost{flex:1 1 0;padding:0 10px}}
+
+/* ===== map + pin pad ===== */
+.mapbox{border-radius:var(--r-lg);overflow:hidden;border:1px solid var(--line);background:var(--surface)}
+.mapbox iframe{display:block;width:100%;aspect-ratio:4/3;border:0;background:var(--sand-2)}
+.mapfake{aspect-ratio:4/3;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;text-align:center;padding:24px;background:radial-gradient(circle at 50% 45%,var(--gold-soft),var(--sand) 60%);color:var(--ink-2)}
+.mapfake .pin{width:54px;height:54px;border-radius:50% 50% 50% 0;transform:rotate(-45deg);background:var(--navy);display:grid;place-items:center;box-shadow:var(--shadow);animation:pinbob 2.4s ease-in-out infinite}
+.mapfake .pin span{width:18px;height:18px;border-radius:50%;background:var(--surface)}
+@keyframes pinbob{50%{transform:rotate(-45deg) translate(4px,-4px)}}
+.mapfake b{font-size:1.05rem}
+.mapfake small{color:var(--muted);max-width:30ch}
+.mapbar{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 16px;border-top:1px solid var(--line);flex-wrap:wrap}
+.mapbar b{display:block}
+.mapbar span{font-size:.86rem;color:var(--muted)}
+.mapbar .mbtns{display:flex;gap:8px}
+@media (max-width:760px){.mapbox iframe,.mapfake{aspect-ratio:1/1}}
+.pinpad{grid-template-columns:repeat(3,68px);gap:14px}
+.pinpad button{width:68px;height:68px;display:grid;place-items:center;padding:0;border-radius:50%;color:var(--ink)}
+.pinpad button:active{background:var(--sand)}
 /* page header */
 .phead{padding:64px 0 36px;border-bottom:1px solid var(--line)}
 .crumbs{display:flex;gap:8px;font-size:.85rem;color:var(--muted);margin-bottom:18px;flex-wrap:wrap}
@@ -1083,9 +1101,10 @@ h1,h2,h3,h4{margin:0}
 <div id="app"></div>
 <noscript><div style="max-width:720px;margin:40px auto;padding:0 20px;font-family:system-ui,sans-serif;line-height:1.6;color:#1C2333">
 <h1>Home by Kish: a cozy condo stay in Cagayan de Oro</h1>
-<p>Home 2 is an entire one-bedroom condo unit in Cagayan de Oro, Misamis Oriental, Philippines, hosted by Keziah Leigh ("Kish"), who has hosted for 9 years with a 4.94 host rating. Up to 3 guests: a queen bed in a glass-walled bedroom and a sofa bed in the living area, 1 bathroom.</p>
+<p>Home 2 is an entire one-bedroom condo unit at One Oasis Condominium, Rosario Limketkai Avenue, Cagayan de Oro, Misamis Oriental, Philippines, hosted by Keziah Leigh ("Kish"), who has hosted for 9 years with a 4.94 host rating. Up to 3 guests: a queen bed in a glass-walled bedroom and a sofa bed in the living area, 1 bathroom.</p>
 <h2>Highlights</h2>
 <ul><li>Private balcony with a mountain view</li><li>Shared outdoor pool, playground and basketball court in the condo grounds</li><li>Free parking on the premises</li><li>Self check-in with a lockbox</li><li>Fast Wi-Fi, dedicated workspace, smart TV with Netflix and Prime</li><li>Full kitchen, air conditioning, welcome basket, honesty store</li></ul>
+<h2>Nearby</h2><p>Maria Reyna Xavier University Hospital (0.7 km), Veterans Park (0.8 km), Limketkai Center (about a 5-minute walk), Xavier University (1.4 km), Centrio Mall (about 2 km), Laguindingan Airport (about 50 minutes by car).</p>
 <h2>Guest rating</h2><p>Rated 5.0 out of 5 from 15 guest reviews (cleanliness, accuracy, check-in, communication and location 5.0; value 4.9).</p>
 <h2>Check-in and rules</h2><p>Check-in after 2:00 PM, check-out before 11:00 AM. Up to 3 guests. Smoke alarm installed.</p>
 <h2>How to book</h2><p>Message Kish on Messenger, by text or by email with your dates. Payment by GCash, bank transfer, or cash on arrival when agreed.</p>
@@ -1194,6 +1213,7 @@ const ic = (n, c = "") => `<svg class="ico ${c}" viewBox="0 0 24 24" aria-hidden
 
 const PKG_CURRENT = "showcase";
 const OTHER_URL = "/booking/";
+const MAP_EMBED = true;
 /* ---------- packages box (shown when the site opens) ---------- */
 /* PKG_CURRENT and OTHER_URL are set by each build. */
 const PACKAGES = {
@@ -1298,7 +1318,7 @@ const TOUR = [
     text: "One of the few places in the area with a pool. It's shared with other residents and open during set hours.",
     items: ["Shared outdoor pool", "Loungers and umbrellas", "Open during building hours"] }
 ];
-const AMENITIES = [["kitchen", "Full kitchen"], ["wifi", "Fast Wi-Fi"], ["chair", "Dedicated workspace"], ["car", "Free parking on premises"], ["pool", "Shared outdoor pool, set hours"], ["film", "Smart TV with Netflix and Prime"], ["lift", "Elevator"], ["mountain", "Private balcony"], ["ac", "Air conditioning"], ["alarm", "Smoke alarm"], ["store", "Honesty store in the unit"], ["basket", "Welcome basket"]];
+const AMENITIES = [["kitchen", "Full kitchen"], ["wifi", "Fast Wi-Fi"], ["chair", "Dedicated workspace"], ["car", "Free parking on premises"], ["pool", "Shared outdoor pool, set hours"], ["film", "Smart TV with Netflix and Prime"], ["lift", "Elevator"], ["mountain", "Private balcony"], ["ac", "Air conditioning"], ["alarm", "Smoke alarm"], ["store", "Honesty store in the unit"], ["basket", "Welcome basket"], ["drop", "Bidet and free toiletries"], ["coffee", "Electric kettle"]];
 const KNOW = [
   ["clock", "Check-in and check-out", ["Check-in after 2:00 PM", "Check-out before 11:00 AM", "Self check-in with a lockbox"]],
   ["home", "House rules", ["Up to 3 guests", "Please treat the unit like a home", "More rules to confirm with Kish"]],
@@ -1328,7 +1348,8 @@ const REVIEWS = [
   ["Esamel", "June 2025", "This place is clean and cozy. Everything we need is found inside the unit. The host is very responsive and gives clear instructions. Highly recommended.", "Thank you so much Maam. It was a pleasure hosting you. Til next time."],
   ["Princess Nadzmyra Xyza", "December 2024", "Host was very responsive to my queries. I didn't have any issues during the whole stay, everything's well provided even the parking space. Thank you so much Ms Keziah for having us! Highly recommended!", "Thank you, Ms. Princess"]
 ];
-const NEARBY = [["Malls and restaurants", "[ ] min drive"], ["City center", "[ ] min drive"], ["Divisoria night market", "[ ] min drive"], ["Nearest hospital", "[ ] min drive"], ["Laguindingan Airport", "About 45 to 60 min"]];
+const NEARBY = [["Maria Reyna Xavier University Hospital", "0.7 km"], ["Veterans Park", "0.8 km"], ["Limketkai Center (mall)", "About 5 min walk"], ["Xavier University", "1.4 km"], ["Centrio Mall", "About 2 km"], ["SM CDO Downtown Premier", "About 15 min walk"], ["Laguindingan Airport", "About 50 min drive"]];
+const PLACE = { name: "One Oasis Condominium", street: "Rosario Limketkai Ave, Cagayan de Oro", q: "One Oasis Condominium Building 1, Cagayan de Oro" };
 const AV = ["#1F2D4A", "#8A6631", "#3F6B57", "#5A6785", "#A0603A", "#2F4F6F"];
 const initials = n => n.split(" ").filter(Boolean).map(x => x[0]).slice(0, 2).join("").toUpperCase();
 const avColor = n => AV[[...n].reduce((a, c) => a + c.charCodeAt(0), 0) % AV.length];
@@ -1409,7 +1430,7 @@ function footer() {
       <div class="soc"><a href="#contact" aria-label="Facebook">${ic("fb")}</a><a href="#contact" aria-label="Instagram">${ic("ig")}</a><a href="#contact" aria-label="TikTok">${ic("tt")}</a></div></div>
     <div><h3>Explore</h3><ul><li><a href="#unit-home2">${esc(UNITS[0].name)}</a></li><li><a href="#home2-tour">Photo tour</a></li><li><a href="#reviews">Guest reviews</a></li><li><a href="#goodtoknow">House rules</a></li><li><a href="#plan">Plan your stay</a></li></ul></div>
     <div><h3>Talk to Kish</h3><ul><li><a class="ci" href="#contact">${ic("chat", "sm")} Messenger</a></li><li><a class="ci" href="#contact">${ic("phone", "sm")} ${CONTACT.phone}</a></li><li><a class="ci" href="#contact">${ic("mail", "sm")} ${CONTACT.email}</a></li><li class="ci">${ic("clock", "sm")} ${HOST.response}</li></ul></div>
-    <div><h3>Where</h3><p class="small" style="margin:0;opacity:.95">[Building name], Cagayan de Oro City, Misamis Oriental</p><p class="tiny" style="margin:10px 0 0;opacity:.8">The exact address is shared once your stay is confirmed.</p></div>
+    <div><h3>Where</h3><p class="small" style="margin:0;opacity:.95">One Oasis Condominium, Rosario Limketkai Ave, Cagayan de Oro City, Misamis Oriental</p><p class="tiny" style="margin:10px 0 0;opacity:.8">The unit number is shared once your stay is confirmed.</p></div>
   </div><div class="base"><div class="wrap"><span>© ${new Date().getFullYear()} Home by Kish</span><button class="themebtn" data-act="theme">${ic(dark ? "sun" : "moon", "sm")}${dark ? "Light mode" : "Dark mode"}</button></div></div></footer>
   <div class="fab"><div class="chatpop" id="chatpop" role="dialog" aria-label="Message Kish"><div style="display:flex;gap:12px;align-items:center;margin-bottom:10px">${KISH}<div><b>Kish</b><div class="tiny muted"><span class="live"></span>${HOST.response}</div></div></div>
     <a href="#contact" data-act="demo" data-w="Opening Messenger">${ic("chat")}<span><b>Messenger</b><br><span class="tiny muted">Fastest reply</span></span></a>
@@ -1542,11 +1563,11 @@ function home() {
     </div></div></section>
 
   <section class="sec sand" id="location"><div class="wrap loc">
-    <div class="rv">${photo(null, { hint: "Map of the area (Google Maps on the live site)" })}</div>
+    <div class="rv">${mapHTML()}</div>
     <div class="rv dl1"><p class="kicker">Location</p><h2 class="display d2">Quiet, green, and close to town</h2>
-      <p class="lede" style="margin-top:20px">Guests describe it as peaceful and private, with malls close by. The building sits among the hills, with gardens, a pool and a playground downstairs.</p>
+      <p class="lede" style="margin-top:20px">Home 2 is at One Oasis, a resort-style condo on Rosario Limketkai Avenue, a short walk from Limketkai Center. Guests describe it as peaceful and private, with gardens, a pool and a playground inside the grounds.</p>
       <ul class="near">${NEARBY.map(([a, b]) => `<li><span>${a}</span><span>${b}</span></li>`).join("")}</ul>
-      <p class="tiny muted" style="margin-top:12px">Travel times will be filled in once the address is confirmed.</p>
+      <p class="tiny muted" style="margin-top:12px">Distances are approximate. The unit number is shared once your stay is confirmed.</p>
     </div></div></section>
 
   <section class="sec"><div class="wrap">
@@ -1846,6 +1867,15 @@ async function copyTxt(txt) {
 }
 if (typeof QUICK !== "undefined") A.quick = async el => { const b = BOOKINGS.find(x => x.ref === el.dataset.ref), q = QUICK[+el.dataset.i], ok = await copyTxt(q[2](b)); toast(ok ? "Message copied" : "Couldn't copy", ok ? "Paste it into Messenger or a text to " + b.guest.split(" ")[0] + "." : "Try again.", ok ? "check" : "alert"); };
 document.addEventListener("change", e => { const x = e.target.dataset && e.target.dataset.extra; if (!x || typeof S.guest === "undefined") return; const set = new Set(S.guest.extras); e.target.checked ? set.add(x) : set.delete(x); S.guest.extras = [...set]; });
+
+/* ---------- map: live Google Map on the real site, a stand-in on the demo link ---------- */
+function mapHTML() {
+  const q = encodeURIComponent(PLACE.q), open = `https://www.google.com/maps/search/?api=1&query=${q}`, dir = `https://www.google.com/maps/dir/?api=1&destination=${q}`;
+  const map = MAP_EMBED
+    ? `<iframe title="Map showing ${esc(PLACE.name)}" src="https://www.google.com/maps?q=${q}&z=15&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>`
+    : `<div class="mapfake"><div class="pin"><span></span></div><b>${esc(PLACE.name)}</b><small>The live Google Map shows here on the real website. Tap the buttons below to open it now.</small></div>`;
+  return `<div class="mapbox">${map}<div class="mapbar"><div><b>${esc(PLACE.name)}</b><span>${esc(PLACE.street)}</span></div><div class="mbtns"><a class="btn ghost sm" href="${open}" target="_blank" rel="noopener">${ic("pin", "sm")}Open map</a><a class="btn sm" href="${dir}" target="_blank" rel="noopener">${ic("send", "sm")}Directions</a></div></div></div>`;
+}
 </script>
 </body>
 </html>
