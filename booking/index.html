@@ -675,6 +675,22 @@ h1,h2,h3,h4{margin:0}
   .mapbox{display:flex;flex-direction:column;width:100%}
   .mapbox iframe,.mapbox .mapfake{flex:1;aspect-ratio:auto;min-height:420px}
 }
+
+/* ways to pay: neat equal tiles on phones */
+.pays .plabel{margin-right:6px}
+@media (max-width:760px){
+  .pays{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:22px}
+  .pays .plabel{grid-column:1/-1;margin:0;font-weight:600;color:var(--ink-2)}
+  .pays .pill{flex-direction:column;justify-content:flex-start;gap:8px;padding:16px 8px 14px;border-radius:var(--r);text-align:center;font-size:.86rem;line-height:1.25;min-height:92px;white-space:normal;min-width:0;background:var(--surface);border-color:var(--line)}
+  .pays .pill .ico{width:24px;height:24px}
+}
+
+@media (max-width:820px){.rsum{grid-template-columns:minmax(0,1fr)}.rsum>*{min-width:0}}
+@media (max-width:400px){.rcats{grid-template-columns:1fr}.rsum{padding:18px}}
+
+.dow,.days{grid-template-columns:repeat(7,minmax(0,1fr))}
+.cal>*,.month{min-width:0}
+@media (max-width:360px){.days .day{min-height:40px;aspect-ratio:auto;font-size:.85rem}.days .day small{font-size:.56rem}}
 /* page header */
 .phead{padding:64px 0 36px;border-bottom:1px solid var(--line)}
 .crumbs{display:flex;gap:8px;font-size:.85rem;color:var(--muted);margin-bottom:18px;flex-wrap:wrap}
@@ -1559,7 +1575,7 @@ function home() {
       <li class="rv dl2"><span class="n">3</span><h3>Pay your way</h3><p>GCash or bank transfer: upload a screenshot of your receipt. Or choose cash on arrival.</p></li>
       <li class="rv dl3"><span class="n">4</span><h3>Get your welcome</h3><p>Kish confirms by text and email, then sends the lockbox code and directions before you arrive.</p></li>
     </ol>
-    <div class="pays rv"><span class="muted small" style="margin-right:6px">Ways to pay:</span><span class="pill">${ic("wallet")}GCash</span><span class="pill">${ic("bank")}Bank transfer</span><span class="pill">${ic("cash")}Cash on arrival</span></div>
+    <div class="pays rv"><span class="muted small plabel">Ways to pay</span><span class="pill">${ic("wallet")}GCash</span><span class="pill">${ic("bank")}Bank transfer</span><span class="pill">${ic("cash")}Cash on arrival</span></div>
   </div></section>
 
   <section class="sec" id="location"><div class="wrap loc">

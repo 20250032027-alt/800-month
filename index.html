@@ -727,6 +727,9 @@ h1,h2,h3,h4{margin:0}
   .mapbox{display:flex;flex-direction:column;width:100%}
   .mapbox iframe,.mapbox .mapfake{flex:1;aspect-ratio:auto;min-height:420px}
 }
+
+@media (max-width:820px){.rsum{grid-template-columns:minmax(0,1fr)}.rsum>*{min-width:0}}
+@media (max-width:400px){.rcats{grid-template-columns:1fr}.rsum{padding:18px}}
 /* page header */
 .phead{padding:64px 0 36px;border-bottom:1px solid var(--line)}
 .crumbs{display:flex;gap:8px;font-size:.85rem;color:var(--muted);margin-bottom:18px;flex-wrap:wrap}
