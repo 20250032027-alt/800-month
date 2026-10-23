@@ -667,6 +667,14 @@ h1,h2,h3,h4{margin:0}
 .pinpad{grid-template-columns:repeat(3,68px);gap:14px}
 .pinpad button{width:68px;height:68px;display:grid;place-items:center;padding:0;border-radius:50%;color:var(--ink)}
 .pinpad button:active{background:var(--sand)}
+
+/* map fills the height of the location column */
+@media (min-width:901px){
+  .loc{align-items:stretch}
+  .loc>div:first-child{display:flex}
+  .mapbox{display:flex;flex-direction:column;width:100%}
+  .mapbox iframe,.mapbox .mapfake{flex:1;aspect-ratio:auto;min-height:420px}
+}
 /* page header */
 .phead{padding:64px 0 36px;border-bottom:1px solid var(--line)}
 .crumbs{display:flex;gap:8px;font-size:.85rem;color:var(--muted);margin-bottom:18px;flex-wrap:wrap}
@@ -1297,7 +1305,7 @@ const REVIEWS = [
   ["Princess Nadzmyra Xyza", "December 2024", "Host was very responsive to my queries. I didn't have any issues during the whole stay, everything's well provided even the parking space. Thank you so much Ms Keziah for having us! Highly recommended!", "Thank you, Ms. Princess"]
 ];
 const NEARBY = [["Maria Reyna Xavier University Hospital", "0.7 km"], ["Veterans Park", "0.8 km"], ["Limketkai Center (mall)", "About 5 min walk"], ["Xavier University", "1.4 km"], ["Centrio Mall", "About 2 km"], ["SM CDO Downtown Premier", "About 15 min walk"], ["Laguindingan Airport", "About 50 min drive"]];
-const PLACE = { name: "One Oasis Condominium", street: "Rosario Limketkai Ave, Cagayan de Oro", q: "One Oasis Condominium Building 1, Cagayan de Oro" };
+const PLACE = { name: "One Oasis Condominium", street: "Rosario Limketkai Ave, Cagayan de Oro", q: "Building 1, One Oasis, Cagayan de Oro" };
 const SPECIAL = {};
 let BOOKINGS = [], BLOCKS = [];
 const NAMES = ["Joanna Mae Sabellano", "Paolo Neri", "Kristine Yap", "Ramil Abao", "Bea Lumantas", "Arnel Gaviola", "Trisha Dumapias", "Kenneth Ebarle", "Mylene Roa", "Jerome Pabayo", "Alyssa Chiongbian", "Ronnie Emano", "Grace Lagbas", "Vince Tiongco", "Hazel Bacarrisas", "Raffy Uy"];
@@ -2297,7 +2305,7 @@ document.addEventListener("change", e => { const x = e.target.dataset && e.targe
 function mapHTML() {
   const q = encodeURIComponent(PLACE.q), open = `https://www.google.com/maps/search/?api=1&query=${q}`, dir = `https://www.google.com/maps/dir/?api=1&destination=${q}`;
   const map = MAP_EMBED
-    ? `<iframe title="Map showing ${esc(PLACE.name)}" src="https://www.google.com/maps?q=${q}&z=15&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>`
+    ? `<iframe title="Map showing ${esc(PLACE.name)}" src="https://www.google.com/maps?q=${q}&z=16&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>`
     : `<div class="mapfake"><div class="pin"><span></span></div><b>${esc(PLACE.name)}</b><small>The live Google Map shows here on the real website. Tap the buttons below to open it now.</small></div>`;
   return `<div class="mapbox">${map}<div class="mapbar"><div><b>${esc(PLACE.name)}</b><span>${esc(PLACE.street)}</span></div><div class="mbtns"><a class="btn ghost sm" href="${open}" target="_blank" rel="noopener">${ic("pin", "sm")}Open map</a><a class="btn sm" href="${dir}" target="_blank" rel="noopener">${ic("send", "sm")}Directions</a></div></div></div>`;
 }
